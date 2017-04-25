@@ -1,0 +1,33 @@
+.about-hotel {
+  margin: 0 auto;
+}
+
+.about-hotel__list {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 310px;
+  margin: 0 auto;
+  margin-bottom: 18px;
+
+  @media @tablet-width {
+    margin-bottom: 34px;
+  }
+}
+
+.about-hotel__item {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.about-hotel__item span {
+  padding-bottom: 4px;
+
+  border-bottom: 1px dotted #000000;
+
+  font-size: 18px;
+}

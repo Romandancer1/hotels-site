@@ -1,0 +1,31 @@
+{
+  "name": "hotels",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "build": "grunt build",
+    "start": "npm run build && grunt serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pam3ec555/hotels.git"
+  },
+  "author": "Ramil&Roman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pam3ec555/hotels/issues"
+  },
+  "homepage": "https://github.com/pam3ec555/hotels#readme",
+  "devDependencies": {
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-css-mqpacker": "^3.0.1",
+    "grunt-csso": "^2.2.0",
+    "grunt-postcss": "^0.8.0"
+  }
+}

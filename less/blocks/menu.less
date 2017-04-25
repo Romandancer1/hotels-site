@@ -1,0 +1,26 @@
+.menu__list {
+  display: none;
+
+  @media @tablet-width {
+    width: 68%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    order: 1;
+  }
+}
+
+.menu__item {
+  @media @tablet-width {
+    margin-right: 5%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.menu__item-name {
+  color: #ffffff;
+}
