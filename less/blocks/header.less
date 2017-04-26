@@ -3,6 +3,12 @@ header {
     background-color: rgba(0, 0, 0, 0.6);
   }
 }
+.not-main {
+
+    background-color: white;
+
+}
+
 
 .header {
   .container();
@@ -13,7 +19,7 @@ header {
   display: -ms-flex;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 
   @media @tablet-width {
     padding-top: 20px;
@@ -41,4 +47,28 @@ header {
       margin-right: 0;
     }
   }
+
+
+}
+.header h3 {
+  display: none;
+  @media @tablet-width {
+    display: block;
+  }
+
+}
+
+
+
+.second-navigation {
+  width: 100%;
+  background-color: #3e7d32;
+
+  @media @desktop-width {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+.second-navigation a {
+  padding: 0 3%;
 }
