@@ -1,8 +1,13 @@
 .about-hotel {
   margin: 0 auto;
-  padding-top: 10px;
+  padding-top: 15px;
+
 
   background: url("../img/about-hotel-bg.png");
+
+  @media @desktop-width  {
+    padding-top: 30px;
+  }
 }
 
 .about-hotel__list {
@@ -10,9 +15,13 @@
   display: -ms-flex;
   display: flex;
   flex-wrap: wrap;
-  max-width: 310px;
+  justify-content: center;
+  
+  max-width: 320px;
   margin: 0 auto;
   margin-bottom: 18px;
+
+  padding: 0 3%;
 
 
   @media @tablet-width {
@@ -21,7 +30,9 @@
 }
 
 .about-hotel__item {
-  margin-right: 20px;
+  margin-right: 15px;
+
+
 
   &:last-child {
     margin-right: 0;
@@ -34,4 +45,26 @@
   border-bottom: 1px dotted #000000;
 
   font-size: 18px;
+
+  cursor: pointer;
+}
+
+ .about-hotel__item .item-active {
+  /* */
+
+  border-bottom: 1px dotted #b19151;
+
+  color: #b19151;
+
+
+  @media @desktop-width {
+    padding: 10px;
+
+    border: 1px solid #b19151;
+    border-radius: 50px;
+
+    color: #b19151;
+
+  }
+
 }
