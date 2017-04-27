@@ -130,3 +130,51 @@ button {
     transform: rotate(45deg);
   }
 }
+
+.breadcrumbs__item {
+  display: inline-block;
+  margin: 0 12px;
+
+  &::before {
+    content: "";
+    position: relative;
+    left: -10px;
+    top: 14px;
+
+
+    width: 0;
+  	height: 0;
+    display: block;
+
+  	border-top: 2px solid transparent;
+  	border-left: 3px solid #000000;
+  	border-bottom: 2px solid transparent;
+    border-right: none;
+  }
+
+  &:first-child {
+    margin-left: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &:last-child {
+    color: #b6985d;
+  }
+
+  & a {
+    color: #000000;
+  }
+}
+
+.second-navigation__wrap {
+  .container();
+
+  padding: 18px 3%;
+
+  @media @desktop-width {
+    padding: 18px 0;
+  }
+}
