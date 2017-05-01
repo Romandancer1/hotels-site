@@ -1,0 +1,56 @@
+.booking-form {
+  padding: 0 20px;
+  padding-top: 42px;
+
+  color: #000000;
+
+  & label {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    margin-right: 34px;
+
+    @media @tablet-width {
+      margin-bottom: 22px;
+    }
+
+    & input {
+      padding: 8px 12px;
+      margin-bottom: 8px;
+
+      border: 1px solid #dddddd;
+      border-radius: 3px;
+
+      @media @tablet-width {
+        margin-bottom: 0;
+      }
+
+      &[type="number"] {
+        max-width: 65px;
+      }
+    }
+  }
+}
+
+.booking-form__date-choice,
+.booking-form__people-count-choise {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media @tablet-width {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+.booking-form__people-count-choise {
+  max-width: 515px;
+
+  @media @tablet-width {
+    background-color: #fafafa;
+  }
+}
