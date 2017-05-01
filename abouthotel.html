@@ -8,22 +8,21 @@
     <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
-    <header class="not-main">
+
+    <header class="not-main-header">
       <div class="header">
-        <img src="img/hotel-logo.png" width="40" height="40" alt="Логотип отеля">
-        <h3> Корпоративный центр </h3>
-        <button type="button" class="header-btn header__menu header-btn-not-main">Меню</button>
-        <a href="" class="header-btn header__item header-btn-not-main">Забронировать</a>
-        <a href="" class="header-btn header__item header-btn-not-main">Контакты</a>
+        <button type="button" class="header-btn header__menu">Меню</button>
+        <a href="" class="header-btn header__item">Забронировать</a>
+        <a href="" class="header-btn header__item">Контакты</a>
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="" class="menu__link">
+            <a href="/abouthotel.html" class="menu__link">
               <div class="menu__item-sprite sprite-alarm"></div>
               <span class="menu__item-name">Об отеле</span>
             </a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">
+            <a href="/hotel-rooms.html" class="menu__link">
               <div class="menu__item-sprite sprite-bed"></div>
               <!--<img src="" alt="" class="menu__item-logo"> -->
               <span class="menu__item-name">Номера</span>
@@ -37,7 +36,7 @@
           </li>
           <li class="menu__item">
             <a href="" class="menu__link">
-              <div class="menu__item-sprite sprite-runner"></div>
+              <div class="menu__item-sprite sprite-map"></div>
               <span class="menu__item-name">Отдых</span>
             </a>
           </li>
@@ -49,302 +48,81 @@
           </li>
           <li class="menu__item">
             <a href="" class="menu__link">
-              <div class="menu__item-sprite sprite-map"></div>
+              <div class="menu__item-sprite sprite-runner"></div>
               <span class="menu__item-name">Карта</span>
             </a>
           </li>
         </ul>
       </div>
-   </header>
+    </header>
 
-   <div class="second-navigation">
+   <div class="second-navigation green-bg">
       <div class="second-navigation__wrap">
-
-
-        <div class="tabs">
-
-
-                  <input id="tab1" type="radio" name="tabs" checked>
-                  <label for="tab1" title="Вкладка 1"><a href="">Об отеле</a></label>
-
-                  <input id="tab2" type="radio" name="tabs">
-                  <label for="tab2" title="Вкладка 2">Как добраться</label>
-
-                  <input id="tab3" type="radio" name="tabs">
-                  <label for="tab3" title="Вкладка 3">Документы</label>
-
-                  <input id="tab4" type="radio" name="tabs">
-                  <label for="tab4" title="Вкладка 1">Новости</label>
-
-
-
-            <section id="content-tab1">
-
-                <div class="about-hotel-content">
-                   <div class="about-hotel-intro">
-                      <div class="about-hotel-intro__text">
-                         <p>
-                           Уникальное расположение позволяет гостям открыть для себя восхитительную панораму
-                           на горные вершины Главного Кавказского хребта, хребта Аибга,
-                           и полюбоваться удивительными пейзажами.
-                         </p>
-                      </div>
-                   </div>
-
-
-                   <div class="about-hotel-content__text">
-
-                     <ul class="breadcrumbs">
-                        <li class="breadcrumbs__item"><a href="">Главная</a></li>
-                        <li class="breadcrumbs__item">Об отеле</li>
-                     </ul>
-
-                     <h2 class="about-hotel-content__title"> Об отеле </h2>
-
-                     <p class="about-hotel-content__paragraph">
-                       Гостиница "Корпоративный центр" – пятизвездочный отель,
-                       приглашает провести незабываемый семейный отдых в
-                       атмосфере комфорта и насладиться чистейшим горным воздухом.
-                     </p>
-
-                     <p class="about-hotel-content__paragraph">
-                       Уникальное расположение позволяет гостям открыть для себя
-                       восхитительную панораму на горные вершины
-                       Главного Кавказского хребта, хребта
-                     </p>
-
-                     <p class="about-hotel-content__paragraph">
-                       Отель расположен на плато курорта «Горки Город», на высоте 960 м
-                       над уровнем моря, в 48 км от аэропорта «Адлер». Из аэропорта до
-                       отеля можно добраться автобусом, на электропоезде «Ласточка», а
-                       также отель может организовать трансфер на комфортном автотранспорте,
-                       либо заказать услугу такси.
-                     </p>
-                   </div>
-                </div>
-              </section>
-
-
-              <section id="content-tab2">
-
-                <div class="about-hotel-howtofind">
-
-                   <div class="about-hotel-howtofind__map">
-                    </div>
-
-
-                   <div class="about-hotel-howtofind__text">
-
-                     <ul class="breadcrumbs">
-                        <li class="breadcrumbs__item"><a href="">Главная</a></li>
-                        <li class="breadcrumbs__item"><a href="">Об отеле</a></li>
-                        <li class="breadcrumbs__item">Как добраться</li>
-                     </ul>
-
-                     <h2 class="about-hotel-content__title"> Как добраться </h2>
-
-                     <div class="about-hotel-howtofind__paragraph">
-                        Гостиница "Корпоративный центр" <br>
-                        располагается на высоте 960 над уровнем моря в  зоне национального сочинского заповедника между горой Ачишхо и её отрогами с запада и хребтом Аибга с востока.<br>
-
-                        Пл. Сбербанка, 1 / пос. Эсто-Садок / Адлер / Сочи
-                     </div>
-
-
-                      <div class="about-hotel-howtofind__paragraph">
-                         <span>Мы обеспечим вас комфортабельным премиальным трансфером из аэропорта г. Сочи до отеля «Корпоративный центр»</span>
-                         <p>
-                         </p>
-                      </div>
-
-                      <div class="about-hotel-howtofind__paragraph">
-                        <span>Для того, чтобы добраться до Гостиницы "Корпоративный центр" на личном автомобиле, используйте координаты для навигатора:</span>
-                         <p>
-                           3°40′11.6″N (43.669886) <br>
-                           40°15′39″E (40.260844)
-                         </p>
-                      </div>
-
-
-                      <div class="about-hotel-howtofind__paragraph">
-                         <span>Так же вы можете прокатиться на высокоскоростном и комфортабельном поезде «Ласточка»:</span>
-                         <ul>
-                           <li>
-                             <img src="/img/star.png" width="9" height="9" alt="Звезда">
-                             поездка из Адлера на Красную Поляну займет 40 минут.</li>
-
-                           <li>
-                             <img src="/img/star.png" width="9" height="9" alt="Звезда">
-                             поездка из Сочи на Красную Поляну займет 1час 15 минут.
-                           </li>
-                         </ul>
-                      </div>
-
-                   </div>
-                </div>
-              </section>
-
-              <section id="content-tab3">
-                 <div class="about-complex-documents">
-
-                   <ul class="breadcrumbs">
-                      <li class="breadcrumbs__item"><a href="">Главная</a></li>
-                      <li class="breadcrumbs__item"><a href="">Об отеле</a></li>
-                      <li class="breadcrumbs__item">Документы</li>
-                   </ul>
-
-                    <h2 class="about-hotel-content__title"> Об отеле </h2>
-
-                    <p class="about-hotel-content__paragraph">
-                       Правовая документация и лицензии. Краткое описание раздела. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                       Excepteur sint occaecat cupidatat non proident,
-
-                    </p>
-
-                    <div class="about-complex-documents__blocks">
-                        <div class="about-complex-documents__rules">
-                            <img src="/img/document.jpg">
-                            <p> Правила проживания </p>
-
-                        </div>
-
-                        <div class="about-complex-documents__5star">
-                             <img src="/img/document.jpg">
-                             <p> Свидетельство о присвоении 5 звезд </p>
-                        </div>
-
-                    </div>
-                </div>
-              </section>
-
-              <section id="content-tab4">
-                <div class="about-complex-news">
-
-                  <ul class="breadcrumbs">
-                     <li class="breadcrumbs__item"><a href="">Главная</a></li>
-                     <li class="breadcrumbs__item"><a href="">Об отеле</a></li>
-                     <li class="breadcrumbs__item">Новости</li>
-                  </ul>
-
-                  <h2 class="about-hotel-content__title"> Новости </h2>
-
-                  <div class="about-complex-news__blocks">
-                       <div class="news-block">
-                           <div class="news-date">
-                              <img src="/img/clock.png" width="19" height="23" Alt="Часики">
-                               <img src="/img/date-show.png" alt="Подсказка">
-                           </div>
-
-                           <div class="news-text">
-
-
-                           Текст новости. Два года подряд мы становились победителями этой премии благодаря нашим гостям.
-                           Ведь каждый день наша команда мечты совершенствует сервис, развивает инфраструктуру отеля и регион, чтобы подарить вам лучший отдых в вашей жизни и незабываемые впечатления!
-                           <br>
-                           <br>
-                         В этом году мы представлены в четырех номинациях:
-                         <br>
-                         <br>
-                         - Ведущий семейный курорт Европы (Europe's Leading Family Resort)
-                         <br>
-                         <br>
-                         - Ведущий европейский курорт для отдыха (Europe's Leading LeisureResort)
-                         <br>
-                         <br>
-                         - Ведущий европейский семейный курорт класса люкс (Europe'sLeading Luxury Family Resort)
-                         <br>
-                         <br>
-                         - Ведущий европейский семейный курорт класса люкс (Europe'sLeading Luxury Family Resort)
-                         <br>
-                         <br>
-                         - Ведущий европейский семейный курорт класса люкс (Europe'sLeading Luxury Family Resort)
-                         <br>
-                         <br>
-                         - Ведущий европейский семейный курорт класса люкс (Europe'sLeading Luxury Family Resort)
-                         <br>
-                         <br>
-                         - Ведущий европейский семейный курорт класса люкс (Europe'sLeading Luxury Family Resort)
-                         <br>
-                         <br>
-                         - Ведущий европейский семейный курорт класса люкс (Europe'sLeading Luxury Family Resort)
-                         <br>
-                         <br>
-                         - Ведущий европейский семейный курорт класса люкс (Europe'sLeading Luxury Family Resort)
-                         <br>
-                         <br>
-                         - Ведущий европейский семейный курорт класса люкс (Europe'sLeading Luxury Family Resort)
-
-                           </div>
-                       </div>
-
-                       <div class="news-block">
-                            <div class="news-photo">
-                               <p>Фотография</p>
-                            </div>
-
-                            <div class="news-date">
-                                <img src="/img/clock.png" width="19" height="23" Alt="Часики">
-                               <img src="/img/date-show.png" alt="Подсказка">
-                            </div>
-
-                            <div class="news-text">
-                              <p>
-                                Текст новости. Два года подряд мы становились победителями этой премии благодаря нашим гостям.
-                                Ведь каждый день наша команда мечты совершенствует сервис,
-                                развивает инфраструктуру отеля и регион, чтобы подарить вам лучший отдых в вашей жизни и незабываемые впечатления!
-                                <br>
-                                <br>
-                                  В этом году мы представлены в четырех номинациях:
-                                <br>
-                                <br>
-                                - Ведущий семейный курорт Европы (Europe's Leading Family Resort)
-                                <br>
-                                <br>
-                                - Ведущий европейский курорт для отдыха (Europe's Leading LeisureResort)
-                                <br>
-                                <br>
-                                - Ведущий европейский семейный курорт класса люкс (Europe'sLeading Luxury Family Resort)
-                              </p>
-                            </div>
-
-                       </div>
-
-                       <div class="news-block">
-                           <div class="news-photo">
-                                <p>Фотография</p>
-                           </div>
-
-                           <div class="news-date">
-                               <img src="/img/clock.png" width="19" height="23" Alt="Часики">
-                               <img src="/img/date-show.png" alt="Подсказка">
-
-
-                           </div>
-
-                           <div class="news-text">
-
-                               4 февраля на катке Ice Mirage состоялась совместная благотворительная акция Российского национального коммерческого банка (РНКБ) и Черноморского флота.
-                               Мероприятие было организовано для воспитанников крымского «Чернышевского детского дома» и приурочено ко «Дню защитника Отечества».
-                               <br>
-                               <br>
-                                Генеральный директор Грант Бабасян, открывший праздничную программу,
-                                отметил: «Дети-будущее Крыма, будущее России. Каждый из нас может внести свой посильный вклад в развитие страны и региона».
-                                <br>
-                                <br>
-                                Собравшихся также поздравили специальные гости: командующий Черноморским флотом,
-                           </div>
-                       </div>
-                  </div>
-                </div>
-              </section>
-
-        </div>
-
+        <span class="second-navigation__title">Об отеле</span>
+         <ul class="second-navigation__list">
+           <li class="second-navigation__item">
+             <a href="/abouthotel-how-to-find.html" class="second-navigation__link">Как добраться</a>
+           </li>
+           <li class="second-navigation__item">
+             <a href="/abouthotel-documents.html" class="second-navigation__link">Документы</a>
+           </li>
+           <li class="second-navigation__item">
+             <a href="/abouthotel-news.html" class="second-navigation__link">Новости</a>
+           </li>
+         </ul>
       </div>
    </div>
+
+
+   <div class="content">
+      <div class="content-intro abouthotel-bg">
+         <div class="content-intro__text">
+            <p>
+              Уникальное расположение позволяет гостям открыть для себя восхитительную панораму
+              на горные вершины Главного Кавказкого хребта
+            </p>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="content__block about-hotel-info">
+
+     <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a href="/index/html">Главная</a></li>
+        <li class="breadcrumbs__item">Об отеле</li>
+     </ul>
+
+     <div class="about-hotel-content__text">
+
+       <h2 class="about-hotel-content__title"> Об отеле </h2>
+
+       <p class="about-hotel-content__paragraph">
+         Гостиница "Корпоративный центр" – пятизвездочный отель,
+         приглашает провести незабываемый семейный отдых в
+         атмосфере комфорта и насладиться чистейшим горным воздухом.
+       </p>
+
+       <p class="about-hotel-content__paragraph">
+         Уникальное расположение позволяет гостям открыть для себя
+         восхитительную панораму на горные вершины
+         Главного Кавказского хребта, хребта
+       </p>
+
+       <p class="about-hotel-content__paragraph">
+         Отель расположен на плато курорта «Горки Город», на высоте 960 м
+         над уровнем моря, в 48 км от аэропорта «Адлер». Из аэропорта до
+         отеля можно добраться автобусом, на электропоезде «Ласточка», а
+         также отель может организовать трансфер на комфортном автотранспорте,
+         либо заказать услугу такси.
+       </p>
+     </div>
+
+
+   </div>
+
+
+
 
 
 
