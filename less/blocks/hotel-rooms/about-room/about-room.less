@@ -1,0 +1,99 @@
+.room-bg-1 {
+  background: url("../img/room-bg-1.jpg") no-repeat #cccccc;
+}
+
+.about-room {
+  .about-room__second-title:not(:first-child) {
+    margin-top: 44px;
+  }
+}
+
+.about-room__title-block {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+
+  @media @tablet-width {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+  }
+}
+
+.about-room__booking-btn {
+  padding: 5px 34px;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #cfab65;
+  border-radius: 15px;
+}
+
+.about-room__second-title {
+  margin-bottom: 14px;
+
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.about-room__advantages-list {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+
+  font-size: 18px;
+  line-height: 24px;
+
+  @media @tablet-width {
+    flex-direction: row;
+  }
+}
+
+.about-room__advantages-item {
+  position: relative;
+
+  margin-bottom: 14px;
+
+  &::before {
+    content: "";
+    position: relative;
+    top: -4px;
+
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    margin-right: 10px;
+
+    background: url("../img/star.png") no-repeat;
+  }
+
+  @media @tablet-width {
+    width: 50%;
+  }
+}
+
+.about-room__photos-list {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media @desktop-width {
+    justify-content: flex-start;
+  }
+}
+
+.about-room__photos-item {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
