@@ -3,21 +3,24 @@
 }
 
 .hotel-rooms-content__tabs {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 
-  max-width: 320px;
-  margin: 0 auto;
-  margin-bottom: 18px;
-
-  padding: 0 3%;
-
+  display: none;
 
   @media @tablet-width {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    max-width: 320px;
+    margin: 0 auto;
+    margin-top: 10px;
     margin-bottom: 34px;
+    padding: 0 3%;
+
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -52,7 +55,27 @@
   }
 }
 
+.hotel-rooms-content__title {
+  margin-top: 14px;
+  margin-bottom: 8px;
+
+  font-size: 40px;
+  line-height: 48px;
+
+  @media @tablet-width {
+    display: none;
+  }
+}
+
+.hotel-rooms-content__intro-text {
+  margin-bottom: 22px;
+
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .hotel-rooms-content__rooms-list {
+
   @media @tablet-width {
     display: -webkit-flex;
     display: -ms-flex;
@@ -66,12 +89,15 @@
   display: block;
   min-width: 300px;
   max-width: 370px;
-  height: 300px;
   margin: 0 auto;
   margin-bottom: 25px;
+  padding-bottom: 18px;
 
   background-color: #f8f7f6;
+  border: 1px solid #dddddd;
   border-radius: 8px;
+
+  font-size: 14px;
 
   @media @tablet-width {
     width: 31%;
@@ -87,7 +113,54 @@
 }
 
 .hotel-rooms-content__name {
-  border-bottom: 1px dotted #000000;
+  margin: 0 10px;
+  margin-bottom: 12px;
+  display: inline-block;
 
-  font-size: 14px;
+  border-bottom: 1px dotted #000000;
+}
+
+.hotel-rooms-content__people-count {
+  position: relative;
+
+  margin: 0 10px;
+  margin-bottom: 12px;
+}
+
+.hotel-rooms-content__people {
+  position: relative;
+  top: 6px;
+}
+
+.hotel-rooms-content__people-descr {
+  position: relative;
+
+  padding: 6px 12px;
+  display: inline;
+  margin-left: 10px;
+
+  background-color: #262320;
+  border-radius: 11px;
+
+  color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -8px;
+
+    width: 0;
+  	height: 0;
+  	border-bottom: 10px solid #262320;
+  	border-left: 10px solid transparent;
+  }
+}
+
+.hotel-rooms-content__price {
+  margin: 0 10px;
+  
+  & b {
+    font-size: 18px;
+  }
 }
