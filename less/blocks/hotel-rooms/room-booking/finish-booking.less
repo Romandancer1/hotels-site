@@ -1,0 +1,65 @@
+.finish-booking__second-title {
+  margin-top: 20px;
+  margin-bottom: 16px;
+
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.finish-booking__values-list {
+  padding: 14px 0;
+  padding-left: 6px;
+  margin-bottom: 10px;
+
+  border-top: 1px dotted #b19151;
+  border-bottom: 1px dotted #b19151;
+}
+
+.finish-booking__value-item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: relative;
+    top: 0px;
+
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    margin-right: 8px;
+
+    background: url("../img/star.png") no-repeat;
+  }
+}
+
+.finish-booking__price {
+  margin-bottom: 28px;
+
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.finish-booking__form {
+  margin-bottom: 50px;
+
+  @media @tablet-width {
+    margin-bottom: 270px;
+  }
+}
+
+.finish-booking__agree {
+  padding: 20px 15px;
+  display: block;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+
+  background-color: #dab66f;
+
+  & span {
+    border-bottom: 1px dotted #ffffff;
+  }
+}

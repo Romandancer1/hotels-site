@@ -48,9 +48,93 @@
 }
 
 .booking-form__people-count-choise {
-  max-width: 515px;
-
   @media @tablet-width {
-    background-color: #fafafa;
+    margin-bottom: 400px;
+  }
+}
+
+.booking-nav {
+  width: auto;
+  background-color: #f4f4f4;
+}
+
+.booking-nav__container {
+  .container();
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 18px 0;
+
+  @media @desktop-width {
+    padding: 18px 0;
+  }
+}
+
+.booking-nav__container--full {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking-nav__btn {
+  position: relative;
+
+  padding: 8px 25px;
+  padding-right: 10px;
+
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+
+  background-color: #e3e3e3;
+  border-radius: 18px;
+
+  &::after {
+    content: "";
+    position: relative;
+    top: 5px;
+
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+
+    background: url("../img/arrow.png") no-repeat;
+  }
+}
+
+.booking-nav__btn--prev {
+  padding: 8px 25px;
+  padding-left: 10px;
+
+  &::after {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    position: relative;
+    top: 5px;
+
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+
+    background: url("../img/arrow.png") no-repeat;
+
+    transform: rotate(180deg);
+  }
+}
+
+.booking-nav__btn--finish {
+  color: #ffffff;
+
+  background-color: #dab66f;
+
+  &::after {
+    background: url("../img/arrow-white.png") no-repeat;
   }
 }
