@@ -1,0 +1,102 @@
+.bar-restaurant-bg {
+  min-height: 386px;
+
+  background: url("../img/bar-restaurant/bar-restaurant.jpg") no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.bar-restaurant-photos {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media @tablet-width {
+    justify-content: space-between;
+  }
+}
+.bar-restaurant-photos img {
+  margin-bottom: 15px;
+  margin-left: 15px;
+  width: 130px;
+  height: 95px;
+
+  @media @tablet-width {
+    width: 275px;
+    height: 185px;
+    margin-left: 0;
+  }
+
+}
+.bar-restaurant-photos img:nth-child(1),
+.bar-restaurant-photos img:nth-child(3) {
+  margin-left: 0;
+}
+
+.bar-restaurant-photos img:nth-child(3) {
+  margin-left: 15px;
+  @media (max-width: 450px) {
+    margin-left: 0;
+  }
+}
+
+.bar-restaurant__time-kitchen {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+
+
+
+  @media @tablet-width {
+    margin-bottom: 20px;
+    flex-direction: row;
+
+  }
+}
+.bar-restaurant__time {
+  margin-bottom: 10px;
+  margin-left: 5px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  @media @tablet-width {
+    margin-bottom: 0;
+    margin-left: 0;
+
+  }
+
+}
+.bar-restaurant__time .time {
+  margin-left: 10px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  color: #fff;
+
+
+
+}
+.bar-restaurant__time .time p {
+  position: relative;
+  left: -85px;
+}
+.bar-restaurant__kitchen {
+  margin-left: 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+
+  @media @tablet-width {
+    margin-left: -35px;
+  }
+}
+.bar-restaurant__kitchen p {
+  margin-left: 15px;
+}
