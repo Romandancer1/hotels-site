@@ -1,0 +1,118 @@
+.choice-room__offer-container {
+  .container();
+
+  padding-top: 28px;
+  padding-bottom: 50px;
+}
+
+.choice-room__second-title {
+  margin-bottom: 4px;
+
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.choice-room__read-more {
+  margin-bottom: 10px;
+
+  color: #b6985d;
+  font-size: 14px;
+  line-height: 24px;
+  border-bottom: 1px dotted #b6985d;
+
+  cursor: pointer;
+}
+
+.choice-room__third-title {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.choice-room__price-range {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+
+  font-size: 18px;
+  line-height: 24px;
+
+  & .bracket {
+    font-weight: 700;
+    font-size: 24px;
+    color: #dab66f;
+
+    &:first-child {
+      margin-right: 8px;
+    }
+
+    &:last-child {
+      margin-left: 8px;
+    }
+  }
+}
+
+.choice-room__room-item {
+  position: relative;
+
+  margin-bottom: 25px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: relative;
+    top: 0px;
+
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    margin-right: 8px;
+
+    background: url("../img/star.png") no-repeat;
+  }
+}
+
+.choise-room__checkbox-btn {
+  padding: 7px 16px;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  background-color: #cfab65;
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  & input {
+    display: none;
+  }
+}
+
+.choice-room__item-wrap {
+  margin-right: 30px;
+  margin-bottom: 8px;
+
+  @media @desktop-width {
+    margin-bottom: 0;
+
+    border-bottom: 1px dotted #000000;
+  }
+}
+
+.choice-room__room-name {
+  margin-right: 50px;
+
+  border-bottom: 1px dotted #000000;
+
+  @media @desktop-width {
+    border-bottom: none;
+  }
+}
