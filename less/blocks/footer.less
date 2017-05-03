@@ -29,7 +29,8 @@ footer {
   }
 }
 
-.footer__links {
+.footer__links-mobile {
+
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -41,11 +42,12 @@ footer {
   line-height: 18px;
 
   @media @tablet-width {
-    justify-content: space-between;
+    display: none;
+
   }
 }
 
-.footer__links a {
+.footer__links-mobile a {
   margin-right: 20px;
 
   border-bottom: 1px dotted #ffffff;
@@ -54,7 +56,52 @@ footer {
     margin-right: 0;
   }
 }
+.footer__links-desktop {
+   display: none;
 
+   margin-bottom: 12px;
+
+   font-size: 14px;
+   line-height: 18px;
+
+   @media @tablet-width {
+     display: -webkit-flex;
+     display: -ms-flex;
+     display: flex;
+
+   }
+}
+.footer__links-desktop .contacts-link {
+   width: 100%;
+   display: -webkit-flex;
+   display: -ms-flex;
+   display: flex;
+   justify-content: space-between;
+
+   font-size: 18px;
+   line-height: 26px;
+
+}
+
+.link-politik::after {
+  content:url("../img/circle.png");
+  width: 5px;
+  height: 5px;
+  position: relative;
+  top:-3px;
+  margin-left: 10px;
+  margin-right: 5px;
+
+}
+.link-booking {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+}
+.link-booking img {
+  margin-right: 10px;
+}
 .footer__tel {
   margin-bottom: 8px;
 
@@ -64,6 +111,37 @@ footer {
 }
 
 .footer__social {
-  font-size: 0;
-  line-height: 0;
+  margin-bottom: 15px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.footer__social-icon {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+	height: 30px;
+	background: rgba(41,41,41,0.7);
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+}
+.footer__social-icon:first-child {
+  margin-right: 5px;
+}
+.footer__social-icon:nth-child(2) {
+  margin-left: 5px;
+}
+.footer__bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
