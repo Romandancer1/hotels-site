@@ -1,0 +1,58 @@
+.hotel-spa-content__title {
+  margin-bottom: 20px;
+
+  font-size: 40px;
+  line-height: 48px;
+
+  @media @tablet-width {
+    margin-top: 40px;
+    margin-bottom: 4px;
+  }
+}
+.hotel-spa-content__title:nth-child(2) {
+   display: none;
+
+   @media @tablet-width {
+     display: block;
+   }
+
+
+}
+
+.hotel-spa-photos {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media @tablet-width {
+    justify-content: space-between;
+  }
+}
+.hotel-spa-photos img {
+  margin-bottom: 15px;
+  margin-left: 15px;
+  width: 130px;
+  height: 95px;
+
+  @media @tablet-width {
+    width: 275px;
+    height: 185px;
+    margin-left: 0;
+  }
+
+}
+.hotel-spa-photos img:nth-child(1),
+.hotel-spa-photos img:nth-child(3) {
+  margin-left: 0;
+}
+
+.hotel-spa-photos img:nth-child(3) {
+  margin-left: 15px;
+  @media (max-width: 450px) {
+    margin-left: 0;
+  }
+}
