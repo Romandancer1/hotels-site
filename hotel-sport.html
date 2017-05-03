@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>hotels-главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+  </head>
+  <body>
+
+    <header class="not-main-header">
+      <div class="header">
+        <button type="button" class="header-btn header__menu">Меню</button>
+        <a href="" class="header-btn header__item">Забронировать</a>
+        <a href="" class="header-btn header__item">Контакты</a>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="/abouthotel.html" class="menu__link">
+              <div class="menu__item-sprite sprite-alarm"></div>
+              <span class="menu__item-name">Об отеле</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="/hotel-rooms.html" class="menu__link">
+              <div class="menu__item-sprite sprite-bed"></div>
+              <!--<img src="" alt="" class="menu__item-logo"> -->
+              <span class="menu__item-name">Номера</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="/bar-restaurant.html" class="menu__link">
+              <div class="menu__item-sprite sprite-coffee"></div>
+              <span class="menu__item-name">Питание</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="/hotel-sport.html" class="menu__link">
+              <div class="menu__item-sprite sprite-map"></div>
+              <span class="menu__item-name">Отдых</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link">
+              <div class="menu__item-sprite sprite-party"></div>
+              <span class="menu__item-name">Мероприятия</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link">
+              <div class="menu__item-sprite sprite-runner"></div>
+              <span class="menu__item-name">Карта</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="second-navigation blue-bg">
+       <div class="second-navigation__wrap">
+         <span class="second-navigation__title">Отдых:</span>
+          <ul class="second-navigation__list">
+            <li class="second-navigation__item">
+              <a href="/hotel-sport.html" class="second-navigation__link">Спорт</a>
+            </li>
+            <li class="second-navigation__item">
+              <a href="/hotel-spa.html" class="second-navigation__link">Спа</a>
+            </li>
+          </ul>
+       </div>
+    </div>
+
+
+   <div class="content__block sport-page">
+     <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a href="/index.html">Главная</a></li>
+        <li class="breadcrumbs__item"><a href="/hotel-sport.html">Отдых</a></li>
+        <li class="breadcrumbs__item">Спорт</li>
+     </ul>
+
+     <div class="about-hotel-content__text">
+
+       <h2 class="about-hotel-content__title"> Спорт </h2>
+
+       <p class="about-hotel-content__paragraph">
+         Аренда оформляется на стойке рецепции в тренажерном зале. Залог не требуется. Здесь же оформляется аренда теннисных кортов или спортивного зала.
+Пожалуйста, не забудьте паспорт для заполнения бланка проката!
+       </p>
+
+       <div class="wrapper">
+       <div class="sport-tab">
+          <button class="tablinks" onclick="openCity(event, 'winteract')" id="defaultOpen"><span>Зимние активности</span></button>
+          <button class="tablinks" onclick="openCity(event, 'summeract')"><span>Летние активности</span></button>
+          <button class="tablinks" onclick="openCity(event, 'gym')"><span>Тренажерный зал</span></button>
+          <button class="tablinks" onclick="openCity(event, 'photos')"><span>Фотографии</span></button>
+        </div>
+
+        <div class="mobile-tab">
+          <select id="mobile-tab" onchange="showtabsmobile()">
+            <option value="" class="tablinks" id="defaultOpen">Зимние активности</option>
+            <option value="" class="tablinks" >Летние активности</option>
+            <option value="" class="tablinks" >Тренажерный зал</option>
+            <option value="" class="tablinks" >Фотографии</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="winteract" class="tabcontent">
+        <h3 class="activity__title">Режим работы канатной дороги</h3>
+        <p class="activity__worktime">
+          Пн-Пт с 6.00 до 24.00<br>
+          Cб-ВС с 6.00 до 24.00
+        </p>
+
+        <h3 class="activity__title">Прокат инвентаря</h3>
+        <table class="activity__table">
+          <tr>
+            <td>Наименование</td>
+            <td>Время</td>
+            <td>Цены(руб.)</td>
+          </tr>
+          <tr>
+            <td>Аренда спортивного зала</td>
+            <td>1 час</td>
+            <td>2000 руб.</td>
+          </tr>
+          <tr>
+            <td>Наименование позиции</td>
+            <td>1 час</td>
+            <td>2000 руб.</td>
+          </tr>
+        </table>
+
+
+
+
+      </div>
+
+      <div id="summeract" class="tabcontent">
+
+        <h3 class="activity__title">Прокат инвентаря</h3>
+        <table class="activity__table">
+          <tr>
+            <td>Наименование</td>
+            <td>Время</td>
+            <td>Цены(руб.)</td>
+          </tr>
+          <tr>
+            <td>Полки для ходьбы</td>
+            <td>1 час</td>
+            <td>2000 руб.</td>
+          </tr>
+          <tr>
+            <td>Велосипед</td>
+            <td>1 час.</td>
+            <td>2000 руб.</td>
+          </tr>
+        </table>
+
+      </div>
+
+      <div id="gym" class="tabcontent gym-act">
+        <div class="wrapper">
+          <div class="gym-date">
+             <p> 24 март 2017 </p>
+          </div>
+
+          <table class="gym__table">
+            <tr>
+              <td>?</td>
+              <td>Что</td>
+              <td>Где</td>
+            </tr>
+            <tr>
+              <td>09:00</td>
+              <td>Утренная гимнастика</td>
+              <td>Фитнес-центр</td>
+            </tr>
+            <tr>
+              <td>10:00</td>
+              <td>Миофасциальный релиз(Дети)</td>
+              <td>закрытый бассеин</td>
+            </tr>
+          </table>
+
+          <table class="gym__table-mobile">
+            <tr>
+              <td>Время / Событие / Место</td>
+
+            </tr>
+            <tr>
+              <td>09:00 / Аренда спортивного
+зала / Фитнесс центр</td>
+
+            </tr>
+            <tr>
+              <td>10:00 / Аренда спортивного
+зала / Фитнесс центр</td>
+
+            </tr>
+          </table>
+
+        </div>
+      </div>
+
+      <div id="photos" class="tabcontent">
+         <div class="activity__photos">
+           <img src="../img/hotel-sport/hotel-sport.png" alt="Фото спортзала">
+           <img src="../img/hotel-sport/hotel-sport-2.jpg" alt="Фото спортзала">
+         </div>
+      </div>
+     </div>
+
+
+   </div>
+
+   <script>
+    function openCity(evt, cityName) {
+
+          var i, tabcontent, tablinks;
+
+
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+
+
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+
+
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+          }
+
+          document.getElementById("defaultOpen").click();
+      </script>
+
+
+
+      <script>
+
+        var i, tabcontent;
+        document.getElementById("defaultOpen").style.display = "block";
+
+        function showtabsmobile() {
+
+          var mobiletab = document.getElementById("mobile-tab");
+          var tabindex = mobiletab.options.selectedIndex;
+
+          var tabcontent = document.getElementsByClassName("tabcontent");
+          var i;
+
+
+          if (tabindex == '0') {
+
+
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+
+            }
+            document.getElementById("winteract").style.display = "block";
+
+
+
+          }
+          if (tabindex == '1') {
+
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+
+              }
+              document.getElementById("summeract").style.display = "block";
+
+
+          }
+
+          if (tabindex == '2') {
+
+
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+
+              }
+              document.getElementById("gym").style.display = "block";
+
+
+
+          }
+
+          if (tabindex == '3') {
+
+
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+
+              }
+              document.getElementById("photos").style.display = "block";
+
+
+          }
+
+   }
+   </script>
+
+
+   <a href="" class="up-btn">
+     <div class="up-btn__wrap">
+       <div class="up-btn__arrow"></div>
+       <span>Наверх</span>
+       <div class="up-btn__arrow"></div>
+     </div>
+   </a>
+
+  <footer class="blue-bg">
+     <div class="footer">
+       <section class="footer__links">
+         <a href="">Контакты</a>
+         <a href="">Забронировать</a>
+       </section>
+       <section class="footer__tel">8 (800) 456-23-12</section>
+       <section class="footer__social">
+         <a href="" class="footer__social-icon footer__social-icon--vk">
+           Вконтакте
+         </a>
+         <a href="" class="footer__social-icon footer__social-icon--odnoklassniki">
+           Одноклассники
+         </a>
+       </section>
+     </div>
+   </footer>
+ </body>
+</html>
