@@ -33,8 +33,13 @@
 }
 
 .content__tabs {
+  margin-bottom: 15px;
 
-  display: none;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+
 
   @media @tablet-width {
     display: -webkit-flex;
@@ -56,6 +61,7 @@
 
 .content__tabs-item {
   margin-right: 15px;
+  
 
   &:last-child {
     margin-right: 0;
