@@ -14,8 +14,13 @@ header {
   & .header-btn {
     color: #000000;
 
-    background-color: #ffffff;
-    border: 1px solid #000000;
+
+    @media @tablet-width {
+      background-color: #ffffff;
+      border: 1px solid #000000;
+
+    }
+
   }
 
   & .header__logo {
@@ -30,8 +35,8 @@ header {
   }
 
   & .header__logo-img {
-    width: 34px;
-    height: 34px;
+    width: 40px;
+    height: 40px;
 
     @media @tablet-width {
       width: 48px;

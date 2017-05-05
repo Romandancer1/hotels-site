@@ -5,52 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>hotels-главная</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
   </head>
+
   <body>
 
 
     <div class="intro">
       <header>
         <div class="header">
-          <button type="button" class="header-btn header__menu">Меню</button>
+          <button type="button" class="header-btn header__menu" id="mobile-menu">Меню</button>
           <a href="room-booking.html" class="header-btn header__item">Забронировать</a>
-          <a href="" class="header-btn header__item">Контакты</a>
-          <ul class="menu__list">
+          <a href="/contacts.html" class="header-btn header__item">Контакты</a>
+          <ul class="menu__list" id="main-menu">
             <li class="menu__item">
               <a href="/abouthotel.html" class="menu__link">
-                <div class="menu__item-sprite sprite-alarm"></div>
+                <div class="menu__item-sprite-white sprite-alarm"></div>
                 <span class="menu__item-name">Об отеле</span>
               </a>
             </li>
             <li class="menu__item">
               <a href="/hotel-rooms.html" class="menu__link">
-                <div class="menu__item-sprite sprite-bed"></div>
+                <div class="menu__item-sprite-white sprite-bed"></div>
                 <!--<img src="" alt="" class="menu__item-logo"> -->
                 <span class="menu__item-name">Номера</span>
               </a>
             </li>
             <li class="menu__item">
               <a href="/bar-restaurant.html" class="menu__link">
-                <div class="menu__item-sprite sprite-coffee"></div>
+                <div class="menu__item-sprite-white sprite-coffee"></div>
                 <span class="menu__item-name">Питание</span>
               </a>
             </li>
             <li class="menu__item">
               <a href="" class="menu__link">
-                <div class="menu__item-sprite sprite-map"></div>
+                <div class="menu__item-sprite-white sprite-map"></div>
                 <span class="menu__item-name">Отдых</span>
               </a>
             </li>
             <li class="menu__item">
               <a href="/hotel-events.html" class="menu__link">
-                <div class="menu__item-sprite sprite-party"></div>
+                <div class="menu__item-sprite-white sprite-party"></div>
                 <span class="menu__item-name">Мероприятия</span>
               </a>
             </li>
             <li class="menu__item">
               <a href="" class="menu__link">
-                <div class="menu__item-sprite sprite-runner"></div>
+                <div class="menu__item-sprite-white sprite-runner"></div>
                 <span class="menu__item-name">Карта</span>
               </a>
             </li>
@@ -130,7 +130,7 @@
               Забронировать</a>
         </section>
         <section class="footer__links-mobile">
-          <a href="">Контакты</a>
+          <a href="/contacts.html">Контакты</a>
           <a href="booling-room.html">
 
             Забронировать
@@ -148,5 +148,18 @@
         </section>
       </div>
     </footer>
+
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('mobile-menu').onclick = function() {
+          document.getElementById("main-menu").classList.toggle('show');
+        }
+      });
+      </script>
+
+
+
+
   </body>
 </html>
