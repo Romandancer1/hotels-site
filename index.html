@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>hotels-главная</title>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
   </head>
 
   <body>
@@ -59,11 +61,25 @@
         </div>
       </header>
          <div class="intro__logo-content">
-             <img class="hotel-logo" src="img/hotel-logo.png" width="100" height="100" alt="Логотип отеля">
+            <img class="hotel-logo" src="img/hotel-logo.png" width="100" height="100" alt="Логотип отеля">
             <h2>Корпоративный центр</h2>
-           <img src="img/fivestars.png" width="180" height="19" alt="5 звезд">
+            <img src="img/fivestars.png" width="180" height="19" alt="5 звезд">
          </div>
-    </div>
+
+         <div class="slick-slider">
+           <div class="slick-slide-1">
+             <!--<img src="/img/slide1.jpg"> -->
+           </div>
+           <div class="slick-slide-2">
+            <!-- <img src="/img/slide2.jpg"> -->
+           </div>
+           <div class="slick-slide-3">
+            <!-- <img src="/img/slide3.jpg">  -->
+           </div>
+         </div>
+  </div>
+
+
 
     <div class="about-hotel">
       <ul class="content__tabs">
@@ -154,6 +170,16 @@
 
 
       <script src="js/main.js"></script>
+
+      <script>
+          $('.slick-slider').slick({
+            dots: true,
+            arrows: false,
+            autoplay: true,
+            autoplayspeed: 2000
+          });
+      </script>
+
 
 
 
