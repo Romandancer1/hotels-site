@@ -1,0 +1,55 @@
+label.selectGeneral
+{
+    display: block;
+    position: relative;
+}
+
+/** Это обещанный placeholder **/
+label.selectGeneral:before
+{
+    content: attr(placeholder); /** Взять текст из атрибута placeholder **/
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    max-width: 100%;
+
+    text-align: left;
+    white-space: nowrap; /** Не переносить слова **/
+
+    color: #adadad;
+
+    overflow-x: hidden; /** Скрыть лишнее **/
+}
+
+/** А это стрелочка **/
+label.selectGeneral:after
+{
+    content: "<>";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    text-align: center;
+
+    background-color: #ffffff;
+
+    transform: rotate(90deg);
+}
+
+label.selectGeneral input,
+label.selectGeneral label
+{
+    display: none;
+}
+
+label.selectGeneral div
+{
+    min-width: 100%;
+    max-height: 500px; /** Ограничения на высоту списка выборов **/
+
+    overflow-x: hidden;
+}

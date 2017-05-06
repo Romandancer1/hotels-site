@@ -6,6 +6,7 @@
     <title>hotels-главная</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+
   </head>
   <body>
 
@@ -105,11 +106,11 @@
         </div>
 
         <div class="mobile-tab">
-          <select id="mobile-tab" onchange="showtabsmobile()">
-            <option value="" class="tablinks" id="defaultOpen">Зимние активности</option>
-            <option value="" class="tablinks" >Летние активности</option>
-            <option value="" class="tablinks" >Тренажерный зал</option>
-            <option value="" class="tablinks" >Фотографии</option>
+          <select class="mobilelinks" id="mobile-tab" onchange="showtabsmobile()">
+            <option value="" class="tablinks" id="defaultOpen"><span>Зимние активности</span></option>
+            <option value="" class="tablinks" ><span>Летние активности</span></option>
+            <option value="" class="tablinks" ><span>Тренажерный зал</span></option>
+            <option value="" class="tablinks" ><span>Фотографии</span></option>
           </select>
         </div>
       </div>
@@ -360,5 +361,6 @@
        <div class="overlay"></div>
 
       <script src="js/main.js"></script>
+
  </body>
 </html>

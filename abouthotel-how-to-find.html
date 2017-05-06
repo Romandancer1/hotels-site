@@ -6,6 +6,7 @@
     <title>hotels-главная</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <script type='text/javascript' src='js/select.js'></script>
   </head>
   <body>
     <header class="not-main-header">
@@ -66,7 +67,41 @@
 
     <div class="second-navigation green-bg">
        <div class="second-navigation__wrap">
-         <span class="second-navigation__title">Об отеле</span>
+         <!-- Вот эта штука и заменит нам select -->
+          <label class="selectGeneral" placeholder="select your OS..."> <!-- Да, да, placeholder тоже поддерживается -->
+             <!-- Если этот radio выбран - select открыт, если нет - select закрыт -->
+             <input type="radio" name="OS">
+
+             <!-- Это wrapper для вариантов выбора -->
+             <div>
+                 <!-- Группа radio и есть аналог оригинальных option -->
+                 <input
+                     type="radio"
+                     name="OS"
+                     value="linux"
+                     id="OS[linux]"
+                 >
+                 <!-- Аналог видимой части option -->
+                 <label for="OS[linux]">linux</label>
+
+                 <input
+                     type="radio"
+                     name="OS"
+                     value="windows"
+                     id="OS[windows]"
+                 >
+                 <label for="OS[windows]">windows</label>
+
+                 <input
+                     type="radio"
+                     name="OS"
+                     value="other"
+                     id="OS[other]"
+                 >
+                 <label for="OS[other]">other</label>
+             </div>
+          </label>
+
           <ul class="second-navigation__list">
             <li class="second-navigation__item">
               <a href="/abouthotel-how-to-find.html" class="second-navigation__link">Как добраться</a>
@@ -94,11 +129,11 @@
          <li class="breadcrumbs__item"><a href="/abouthotel.html">Об отеле</a></li>
          <li class="breadcrumbs__item">Как добраться</li>
       </ul>
-
+    </div>
 
      <div class="about-hotel-howtofind__text">
 
-
+     <div class="content__block">
        <h2 class="about-hotel-content__title"> Как добраться </h2>
 
        <div class="about-hotel-howtofind__paragraph">
@@ -107,22 +142,27 @@
 
           Пл. Сбербанка, 1 / пос. Эсто-Садок / Адлер / Сочи
        </div>
+     </div>
 
+     <div class="howtofind-content__wrapper">
+       <div class="content__block">
+          <div class="about-hotel-howtofind__paragraph">
+             <span>Мы обеспечим вас комфортабельным премиальным трансфером из аэропорта г. Сочи до отеля «Корпоративный центр»</span>
+             <div class="about-hotel-howtofind__car">
+                <div class="about-hotel-howtofind__car-item">
+                  <img src="/img/about-hotels-howtofind/howtofind-sedan.png" alt="Седан">
+                  <p>Автомобили бизнес-класса</p>
+                </div>
+                <div class="about-hotel-howtofind__car-item">
+                  <img src="/img/about-hotels-howtofind/howtofind-bus.png" alt="Комфортабельный автобус">
+                  <p>Комфортабельные автобусы</p>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
 
-        <div class="about-hotel-howtofind__paragraph">
-           <span>Мы обеспечим вас комфортабельным премиальным трансфером из аэропорта г. Сочи до отеля «Корпоративный центр»</span>
-           <div class="about-hotel-howtofind__car">
-              <div class="about-hotel-howtofind__car-item">
-                <img src="/img/about-hotels-howtofind/howtofind-sedan.png" alt="Седан">
-                <p>Автомобили бизнес-класса</p>
-              </div>
-              <div class="about-hotel-howtofind__car-item">
-                <img src="/img/about-hotels-howtofind/howtofind-bus.png" alt="Комфортабельный автобус">
-                <p>Комфортабельные автобусы</p>
-              </div>
-           </div>
-        </div>
-
+    <div class="content__block">
         <div class="about-hotel-howtofind__paragraph">
           <span>Для того, чтобы добраться до Гостиницы "Корпоративный центр" на личном автомобиле, используйте координаты для навигатора:</span>
            <p>
@@ -130,7 +170,11 @@
              40°15′39″E (40.260844)
            </p>
         </div>
+     </div>
 
+
+    <div class="howtofind-content__wrapper">
+      <div class="content__block">
 
         <div class="about-hotel-howtofind__paragraph">
            <span>Так же вы можете прокатиться на высокоскоростном и комфортабельном поезде «Ласточка»:</span>
