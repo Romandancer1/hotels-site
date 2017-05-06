@@ -1,8 +1,17 @@
 .booking-form {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   padding: 0 20px;
   padding-top: 42px;
 
   color: #000000;
+
+  @media @tablet-width {
+    flex-direction: row;
+  }
 
   & label {
     display: -webkit-flex;
@@ -25,10 +34,10 @@
       @media @tablet-width {
         margin-bottom: 0;
       }
+    }
 
-      &[type="number"] {
-        max-width: 65px;
-      }
+    & input[type="number"] {
+      width: 70px;
     }
   }
 }
@@ -47,10 +56,83 @@
   }
 }
 
-.booking-form__people-count-choise {
-  @media @tablet-width {
-    margin-bottom: 400px;
+.booking-form__choice-calendar-block {
+  margin-bottom: 30px;
+
+  & td:nth-child(8) {
+    width: 66px;
   }
+
+  @media @tablet-width {
+    margin-bottom: 180px;
+  }
+}
+
+.legends__item {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.legends__text {
+  max-width: 340px;
+}
+
+.legends__color {
+  margin-top: 4px;
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+}
+
+// .book-widget {
+//   display: -webkit-flex;
+//   display: -ms-flex;
+//   display: flex;
+//   justify-content: space-between;
+// }
+//
+// .booking-form {
+//   & input,
+//   & select {
+//     padding: 8px 12px;
+//     margin-bottom: 8px;
+//
+//     border: 1px solid #dddddd;
+//     border-radius: 3px;
+//
+//     @media @tablet-width {
+//      margin-bottom: 0;
+//     }
+//   }
+//
+//   & label {
+//     display: -webkit-flex;
+//     display: -ms-flex;
+//     display: flex;
+//     flex-direction: column;
+//   }
+//
+//   & label span {
+//     margin-bottom: 6px;
+//   }
+// }
+//
+// .table-form__col {
+//   margin-right: 30px;
+// }
+
+.book-widget__calendars {
+  max-width: 550px;
+}
+
+.table-form__row {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .booking-nav {
