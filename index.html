@@ -16,6 +16,7 @@
           <button type="button" class="header-btn header__menu" id="mobile-menu">Меню</button>
           <a href="room-booking.html" class="header-btn header__item">Забронировать</a>
           <a href="/contacts.html" class="header-btn header__item">Контакты</a>
+          <button class="menu__close-btn">Закрыть[Х]</button>
           <ul class="menu__list" id="main-menu">
             <li class="menu__item">
               <a href="/abouthotel.html" class="menu__link">
@@ -37,7 +38,7 @@
               </a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">
+              <a href="/hotel-sport.html" class="menu__link">
                 <div class="menu__item-sprite-white sprite-map"></div>
                 <span class="menu__item-name">Отдых</span>
               </a>
@@ -125,13 +126,13 @@
               <a href="" class="link-politik">Политика конфидециальности</a>
               <a href="">Контакты</a>
             </div>
-            <a href="" class="link-booking">
+            <a href="room-booking.html" class="link-booking">
               <img src="/img/time-left.png" width="27" height="27" Alt="Забронировать">
               Забронировать</a>
         </section>
         <section class="footer__links-mobile">
           <a href="/contacts.html">Контакты</a>
-          <a href="booling-room.html">
+          <a href="room-booking.html">
 
             Забронировать
           </a>
@@ -149,14 +150,10 @@
       </div>
     </footer>
 
+    <div class="overlay"></div>
 
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        document.getElementById('mobile-menu').onclick = function() {
-          document.getElementById("main-menu").classList.toggle('show');
-        }
-      });
-      </script>
+
+      <script src="js/main.js"></script>
 
 
 
