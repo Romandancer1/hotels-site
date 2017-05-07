@@ -68,6 +68,52 @@
   }
 }
 
+.booking-form__calendar--1,
+.booking-form__calendar--2,
+.booking-form__calendar--3,
+.booking-form__calendar--4 {
+  display: none;
+
+  text-align: center;
+
+  overflow: auto;
+
+  & td {
+    width: 30px;
+
+    border-radius: 3px;
+  }
+}
+
+.prev-arrow input{
+  transform: rotate(180deg);
+}
+
+.old-datepicker__month {
+  min-width: 120px;
+}
+
+.cal_open,
+.cal_closed {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.booking-form__calendar--show {
+  display: block;
+}
+
+.old-datepicker__head {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+
+
 .legends__item {
   display: -webkit-flex;
   display: -ms-flex;
@@ -124,7 +170,7 @@
 //   margin-right: 30px;
 // }
 
-.book-widget__calendars {
+.booking-form__calendar {
   max-width: 550px;
 }
 
