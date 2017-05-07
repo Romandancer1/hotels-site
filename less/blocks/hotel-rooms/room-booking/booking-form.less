@@ -6,11 +6,13 @@
   flex-direction: column;
   padding: 0 20px;
   padding-top: 42px;
+  margin-bottom: 20px;
 
   color: #000000;
 
   @media @tablet-width {
     flex-direction: row;
+    margin-bottom: 180px;
   }
 
   & label {
@@ -125,12 +127,19 @@
 }
 
 .legends__color {
-  margin-top: 4px;
-  margin-right: 8px;
-  width: 16px;
-  height: 16px;
+  margin-top: 8px;
+  margin-right: 6px;
+  width: 8px;
+  height: 8px;
 
   border-radius: 50%;
+
+  @media (min-width: 420px) {
+    margin-top: 4px;
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+  }
 }
 
 // .book-widget {
