@@ -5,6 +5,9 @@
   var menuBtn = document.querySelector(".header__menu");
   var menuLinks = document.querySelectorAll(".menu__item-sprite");
   var menuName = document.querySelectorAll(".menu__item-name");
+  var secondMenuList = document.querySelector(".second-navigation__list");
+  var secondMenuTitle = document.querySelector(".second-navigation__title");
+
 
 
   menuBtn.addEventListener("click", function(e) {
@@ -47,4 +50,16 @@
         menuName[i].classList.remove("color-white");
       }
     }
+
+    if(document.documentElement.clientWidth > 890) {
+      secondMenuList.classList.remove("show");
+    }
   };
+
+  secondMenuTitle.addEventListener("click", function(e) {
+    secondMenuList.classList.add("show");
+
+    if(secondMenuList.classList.contains("show")) {
+      secondMenuList.classList.remove("show");
+    }
+  });
