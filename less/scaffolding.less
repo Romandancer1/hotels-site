@@ -264,7 +264,7 @@ button {
   top: 60px;
   left: -3px;
 
-  width: 106%;
+  width: 100%;
 
   display: none;
 
@@ -291,6 +291,10 @@ button {
   display: -ms-flex;
   display: flex;
   flex-direction: column;
+
+  @media @tablet-width {
+    flex-direction: row;
+  }
 }
 
 .second-navigation__item {
