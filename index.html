@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>hotels-главная</title>
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
+
+
+
   </head>
 
   <body>
@@ -15,9 +16,11 @@
     <div class="intro">
       <header>
         <div class="header">
-          <button type="button" class="header-btn header__menu" id="mobile-menu">Меню</button>
-          <a href="room-booking.html" class="header-btn header__item">Забронировать</a>
-          <a href="/contacts.html" class="header-btn header__item">Контакты</a>
+
+            <button type="button" class="header-btn header__menu" id="mobile-menu">Меню</button>
+            <a href="room-booking.html" class="header-btn header__item">Забронировать</a>
+            <a href="/contacts.html" class="header-btn header__item">Контакты</a>
+
           <button class="menu__close-btn">Закрыть[Х]</button>
           <ul class="menu__list" id="main-menu">
             <li class="menu__item">
@@ -66,64 +69,113 @@
             <img src="img/fivestars.png" width="180" height="19" alt="5 звезд">
          </div>
 
-         <div class="slick-slider">
+        <div class="main-slider">
            <div class="slick-slide-1">
-             <!--<img src="/img/slide1.jpg"> -->
            </div>
            <div class="slick-slide-2">
-            <!-- <img src="/img/slide2.jpg"> -->
            </div>
            <div class="slick-slide-3">
-            <!-- <img src="/img/slide3.jpg">  -->
            </div>
-         </div>
+        </div>
+
+
   </div>
 
 
-
     <div class="about-hotel">
-      <ul class="content__tabs">
-        <li class="content__tabs-item">
-          <button type="button">
-            <span class="item-active">Об отеле</span>
-          </button>
-        </li>
-        <li class="content__tabs-item">
-          <button type="button">
-            <span>Номера</span>
-          </button>
-        </li>
-        <li class="content__tabs-item">
-          <button type="button">
-            <span>Питание</span>
-          </button>
-        </li>
-      </ul>
-      <div class="about-hotel__content">
-        <div class="about-hotel-descr">
-          <img src="img/about-hotel-descr__hotel-1.jpg"
-          alt="" class="about-hotel-descr__image">
-          <div class="about-hotel-descr__text">
-            <p><span>Гостиница "Корпоративный центр"</span> – пятизвездочный отель,
-              приглашает провести незабываемый семейный отдых в атмосфере
-              комфорта и насладиться чистейшим горным воздухом.
-            </p>
-            <p>
-              Уникальное расположение позволяет гостям открыть для себя
-              восхитительную панораму на горные вершины Главного Кавказского
-              хребта, хребта Аибга, и полюбоваться удивительными пейзажами.
-            </p>
-            <p>
-              Отель расположен на плато курорта «Горки Город»,
-              на высоте 960 м над уровнем моря, в 48 км от аэропорта «Адлер».
-              Из аэропорта до отеля можно добраться автобусом, на электропоезде
-              «Ласточка», а также отель может организовать трансфер на
-              комфортном автотранспорте, либо заказать услугу такси.
-            </p>
-            <div class="about-hotel-descr__arrow"></div>
-          </div>
-        </div>
-      </div>
+      <div class="tab">
+
+        	<ul class="tabs">
+        		<li><a href="#">Об отеле</a></li>
+        		<li><a href="#">Номера</a></li>
+        		<li><a href="#">Питание</a></li>
+        	</ul> <!-- / tabs -->
+
+        	<div class="tab_content">
+
+        		<div class="tabs_item">
+              <div class="about-hotel__content">
+                <div class="about-hotel-descr">
+                  <img src="img/about-hotel-descr__hotel-1.jpg" alt="" class="about-hotel-descr__image">
+                  <div class="about-hotel-descr__text">
+                    <p><span>Гостиница "Корпоративный центр"</span> – пятизвездочный отель,
+                      приглашает провести незабываемый семейный отдых в атмосфере
+                      комфорта и насладиться чистейшим горным воздухом.
+                    </p>
+                    <p>
+                      Уникальное расположение позволяет гостям открыть для себя
+                      восхитительную панораму на горные вершины Главного Кавказского
+                      хребта, хребта Аибга, и полюбоваться удивительными пейзажами.
+                    </p>
+                    <p>
+                      Отель расположен на плато курорта «Горки Город»,
+                      на высоте 960 м над уровнем моря, в 48 км от аэропорта «Адлер».
+                      Из аэропорта до отеля можно добраться автобусом, на электропоезде
+                      «Ласточка», а также отель может организовать трансфер на
+                      комфортном автотранспорте, либо заказать услугу такси.
+                    </p>
+                    <a href="#"><div class="about-hotel-descr__arrow"></div></a>
+                  </div>
+                </div>
+              </div>
+        		</div> <!-- / tabs_item -->
+
+        		<div class="tabs_item">
+              <div class="about-hotel__content">
+                <div class="about-hotel-descr">
+                  <img src="img/about-hotel-descr__hotel-1.jpg" alt="" class="about-hotel-descr__image">
+                  <div class="about-hotel-descr__text">
+                    <p><span>И номера чистные и новые</span> – пятизвездочный отель,
+                      приглашает провести незабываемый семейный отдых в атмосфере
+                      комфорта и насладиться чистейшим горным воздухом.
+                    </p>
+                    <p>
+                      Уникальное расположение позволяет гостям открыть для себя
+                      восхитительную панораму на горные вершины Главного Кавказского
+                      хребта, хребта Аибга, и полюбоваться удивительными пейзажами.
+                    </p>
+                    <p>
+                      Отель расположен на плато курорта «Горки Город»,
+                      на высоте 960 м над уровнем моря, в 48 км от аэропорта «Адлер».
+                      Из аэропорта до отеля можно добраться автобусом, на электропоезде
+                      «Ласточка», а также отель может организовать трансфер на
+                      комфортном автотранспорте, либо заказать услугу такси.
+                    </p>
+                    <div class="about-hotel-descr__arrow"></div>
+                  </div>
+                </div>
+              </div>
+        		</div> <!-- / tabs_item -->
+
+        		<div class="tabs_item">
+              <div class="about-hotel__content">
+                <div class="about-hotel-descr">
+                  <img src="img/about-hotel-descr__hotel-1.jpg" alt="" class="about-hotel-descr__image">
+                  <div class="about-hotel-descr__text">
+                    <p><span>А кормят вкусно</span> – пятизвездочный отель,
+                      приглашает провести незабываемый семейный отдых в атмосфере
+                      комфорта и насладиться чистейшим горным воздухом.
+                    </p>
+                    <p>
+                      Уникальное расположение позволяет гостям открыть для себя
+                      восхитительную панораму на горные вершины Главного Кавказского
+                      хребта, хребта Аибга, и полюбоваться удивительными пейзажами.
+                    </p>
+                    <p>
+                      Отель расположен на плато курорта «Горки Город»,
+                      на высоте 960 м над уровнем моря, в 48 км от аэропорта «Адлер».
+                      Из аэропорта до отеля можно добраться автобусом, на электропоезде
+                      «Ласточка», а также отель может организовать трансфер на
+                      комфортном автотранспорте, либо заказать услугу такси.
+                    </p>
+                    <div class="about-hotel-descr__arrow"></div>
+                  </div>
+                </div>
+              </div>
+        		</div> <!-- / tabs_item -->
+
+        	</div> <!-- / tab_content -->
+      </div> <!-- / tab -->
     </div>
 
     <a href="" class="up-btn">
@@ -144,13 +196,13 @@
             </div>
             <a href="room-booking.html" class="link-booking">
               <img src="/img/time-left.png" width="27" height="27" Alt="Забронировать">
-              Забронировать</a>
+              <span>Забронировать</span></a>
         </section>
         <section class="footer__links-mobile">
           <a href="/contacts.html">Контакты</a>
           <a href="room-booking.html">
 
-            Забронировать
+            <span>Забронировать</span>
           </a>
         </section>
         <section class="footer__tel">8 (800) 456-23-12</section>
@@ -169,20 +221,30 @@
     <div class="overlay"></div>
 
 
-      <script src="js/main.js"></script>
-
-      <script>
-          $('.slick-slider').slick({
-            dots: true,
-            arrows: false,
-            autoplay: true,
-            autoplayspeed: 2000
-          });
-      </script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
 
 
 
+    <script>
+    $(document).ready(function() {
+      $('.main-slider').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        lazyLoad: "progressive",
+        autoplay: true,
+        autoplayspeed: 2000,
+        slidesToShow: 1
 
+      });
+
+    });
+    </script>
+
+
+    <script src="js/main-menu.js"></script>
+    <script src="js/content.js"></script>
 
   </body>
 </html>

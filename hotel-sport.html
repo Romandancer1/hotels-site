@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>hotels-главная</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+
 
   </head>
   <body>
@@ -172,10 +174,16 @@
       <div id="gym" class="tabcontent gym-act">
         <div class="wrapper">
           <div class="gym-date">
-             <p> 24 март 2017 </p>
+             <div class="date-prev-arrow">
+                 <img src="/img/hotel-sport/gym-date-arrow.png">
+             </div>
+             <p> <span class="date-day">1</span> март 2017 </p>
+             <div class="date-next-arrow">
+                 <img src="/img/hotel-sport/gym-date-arrow.png">
+             </div>
           </div>
 
-          <table class="gym__table">
+          <table class="gym__table" id="1-day">
             <tr>
               <td>?</td>
               <td>Что</td>
@@ -192,6 +200,44 @@
               <td>закрытый бассеин</td>
             </tr>
           </table>
+
+          <table class="gym__table" id="2-day">
+            <tr>
+              <td>?</td>
+              <td>Что</td>
+              <td>Где</td>
+            </tr>
+            <tr>
+              <td>09:00</td>
+              <td>Танцы</td>
+              <td>Бассеин</td>
+            </tr>
+            <tr>
+              <td>10:00</td>
+              <td>Акваэробика</td>
+              <td>закрытый бассеин</td>
+            </tr>
+          </table>
+
+          <table class="gym__table" id="3-day">
+            <tr>
+              <td>?</td>
+              <td>Что</td>
+              <td>Где</td>
+            </tr>
+            <tr>
+              <td>09:00</td>
+              <td>Карате</td>
+              <td>Фитнес-центр</td>
+            </tr>
+            <tr>
+              <td>10:00</td>
+              <td>Соревнования по плаванию</td>
+              <td>закрытый бассеин</td>
+            </tr>
+          </table>
+
+
 
           <table class="gym__table-mobile">
             <tr>
@@ -215,8 +261,8 @@
 
       <div id="photos" class="tabcontent">
          <div class="activity__photos">
-           <img src="../img/hotel-sport/hotel-sport.png" alt="Фото спортзала">
-           <img src="../img/hotel-sport/hotel-sport-2.jpg" alt="Фото спортзала">
+              <a data-fancybox="gallery" href="/img/hotel-sport/hotel-sport.png">   <img src="../img/hotel-sport/hotel-sport.png" alt="Фото спортзала"> </a>
+              <a data-fancybox="gallery" href="/img/hotel-sport/hotel-sport-2.jpg">   <img src="../img/hotel-sport/hotel-sport-2.jpg" alt="Фото спортзала"> </a>
          </div>
       </div>
      </div>
@@ -360,7 +406,64 @@
 
        <div class="overlay"></div>
 
+       <script src="js/jquery-3.2.1.min.js"></script>
+       <script src="js/jquery.fancybox.min.js"></script>
+
+       <script>
+        /* $(document).ready(function () {
+            var item = $('.gym__table');
+            var n = 0;
+            $('.gym__table').hide()
+            $('.gym__table:eq(0)').show()
+
+
+             $('.date-next-arrow').click(function () {
+                  $('.date-day').html(parseInt($('.date-day').html(), 0)+1);
+
+                  var checkDayNext = $('.date-day').text();
+
+
+
+                  n = n + 1;
+
+                  console.log(n);
+                  $('.gym__table').hide()
+                  $('.gym__table:eq('+n+')').show();
+
+
+
+
+
+                  if ( checkDayNext > 2  ) {
+
+
+                  }
+             });
+
+             $('.date-prev-arrow').click(function () {
+                   $('.date-day').html(parseInt($('.date-day').html(), 0)-1);
+
+                var checkDayPrev = $('.date-day').text();
+
+                n = n - 1;
+                $('.gym__table').hide()
+                $('.gym__table:eq('+n+')').show();
+
+                console.log(n);
+
+                 if ( checkDayPrev < 2  ) {
+
+
+                 }
+             });
+
+         }); */
+
+
+       </script>
+
       <script src="js/main.js"></script>
+
 
  </body>
 </html>

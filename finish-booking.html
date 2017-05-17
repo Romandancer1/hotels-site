@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>hotels-главная</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    
   </head>
   <body>
 
@@ -73,16 +73,6 @@
        </div>
     </div>
 
-    <div class="content">
-       <div class="content-intro room-bg-1">
-          <div class="content-intro__text">
-             <p>
-               Краткое описание номера
-             </p>
-          </div>
-       </div>
-    </div>
-
     <div class="content__block about-room">
 
       <ul class="breadcrumbs">
@@ -98,30 +88,31 @@
 
       <ul class="finish-booking__values-list">
         <li class="finish-booking__value-item">
-          <b>Тип номера:</b>
+          <b>Тип номера:</b> Королевский люкс
         </li>
         <li class="finish-booking__value-item">
-          <b>Количество номеров:</b>
+          <b>Количество номеров:</b> 1
         </li>
         <li class="finish-booking__value-item">
-          <b>Параметры размещения:</b>
+          <b>Параметры размещения:</b> 1 взрослый
         </li>
         <li class="finish-booking__value-item">
-          <b>Период проживания:</b>
+          <b>Период проживания:</b> 22.03.2017 до 23.03.2017
         </li>
         <li class="finish-booking__value-item">
-          <b>Стоимость:</b>
+          <b>Стоимость:</b> 23 280,00 руб.
         </li>
       </ul>
 
       <p class="finish-booking__price">
-        Итого:
+        Итого:23 280,00 руб.
       </p>
 
       <form action="" class="finish-booking__form">
         <label for="" class="finish-booking__agree">
           <input type="checkbox">
-          Я согласен с условиями <span>Публичной оферты</span>
+          <div class="special-checkbox"></div>
+          <p>Я согласен с условиями <span>Публичной оферты</span></p>
         </label>
       </form>
 
@@ -180,6 +171,19 @@
 
     <div class="overlay"></div>
 
+
+    <script>
+
+       var a = document.querySelector('.finish-booking__agree');
+
+
+        a.addEventListener("click",function(){
+          a.classList.toggle("checked");
+        });
+
+
+    </script>
     <script src="js/main.js"></script>
+
   </body>
 </html>

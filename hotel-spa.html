@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>hotels-главная</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   </head>
   <body>
 
@@ -100,10 +100,10 @@
        <h2 class="hotel-spa-content__title"> Фото </h2>
 
        <div class="hotel-spa-photos">
-          <img class="hotel-spa-photo" src="/img/hotel-spa/hotel-spa-1.png" alt="Фото-ресторана">
-          <img class="hotel-spa-photo" src="/img/hotel-spa/hotel-spa-2.png" alt="Фото-ресторана">
-          <img class="hotel-spa-photo" src="/img/hotel-spa/hotel-spa-3.png" alt="Фото-ресторана">
-          <img class="hotel-spa-photo" src="/img/hotel-spa/hotel-spa-4.jpg" alt="Фото-ресторана">
+          <a data-fancybox="gallery" href="/img/hotel-spa/hotel-spa-1.png"><img class="hotel-spa-photo" src="/img/hotel-spa/hotel-spa-1.png" alt="Фото-ресторана"></a>
+          <a data-fancybox="gallery" href="/img/hotel-spa/hotel-spa-2.png"><img class="hotel-spa-photo" src="/img/hotel-spa/hotel-spa-2.png" alt="Фото-ресторана"></a>
+          <a data-fancybox="gallery" href="/img/hotel-spa/hotel-spa-3.png"><img class="hotel-spa-photo" src="/img/hotel-spa/hotel-spa-3.png" alt="Фото-ресторана"></a>
+          <a data-fancybox="gallery" href="/img/hotel-spa/hotel-spa-4.jpg"><img class="hotel-spa-photo" src="/img/hotel-spa/hotel-spa-4.jpg" alt="Фото-ресторана"></a>
         </div>
      </div>
 
@@ -156,6 +156,9 @@
 
     <div class="overlay"></div>
 
+
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
  </body>
 </html>

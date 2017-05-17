@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>hotels-главная</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+
   </head>
   <body>
 
@@ -67,7 +69,7 @@
 
    <div class="second-navigation purple-bg">
       <div class="second-navigation__wrap">
-        <span class="second-navigation__title">Питание</span>
+        <span class="second-navigation__title">Питание:</span>
       </div>
    </div>
 
@@ -112,10 +114,10 @@
 
 
        <div class="bar-restaurant-photos">
-          <img class="bar-restaurant-photo" src="/img/bar-restaurant/restaurant-photo-1.png" alt="Фото-ресторана">
-          <img class="bar-restaurant-photo" src="/img/bar-restaurant/restaurant-photo-2.png" alt="Фото-ресторана">
-          <img class="bar-restaurant-photo" src="/img/bar-restaurant/restaurant-photo-3.png" alt="Фото-ресторана">
-          <img class="bar-restaurant-photo" src="/img/bar-restaurant/restaurant-photo-4.jpg" alt="Фото-ресторана">
+          <a data-fancybox="gallery" href="img/gatsby-1.jpg"><img class="bar-restaurant-photo" src="/img/bar-restaurant/restaurant-photo-1.png" alt="Фото-ресторана"><a/>
+          <a data-fancybox="gallery" href="img/gatsby-2.jpg"><img class="bar-restaurant-photo" src="/img/bar-restaurant/restaurant-photo-2.png" alt="Фото-ресторана"><a/>
+          <a data-fancybox="gallery" href="img/gatsby-3.jpg"><img class="bar-restaurant-photo" src="/img/bar-restaurant/restaurant-photo-3.png" alt="Фото-ресторана"><a/>
+          <a data-fancybox="gallery" href="img/gatsby-4.jpg"><img class="bar-restaurant-photo" src="/img/bar-restaurant/restaurant-photo-4.jpg" alt="Фото-ресторана"><a/>
         </div>
      </div>
    </div>
@@ -165,6 +167,11 @@
 
         <div class="overlay"></div>
 
+        <script src="js/jquery-3.2.1.min.js"></script>
+      
+        <script src="js/jquery.fancybox.min.js"></script
+
         <script src="js/main.js"></script>
+
      </body>
    </html>

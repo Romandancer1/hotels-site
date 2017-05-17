@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>hotels-главная</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
+
   </head>
   <body>
 
@@ -13,9 +13,18 @@
 
     <header class="not-main-header">
       <div class="header">
+        <a href="index.html" class="header__logo">
+          <img src="img/hotel-logo.png" alt="" class="header__logo-img">
+          <span class="header__logo-text">
+            Корпоративный <br>
+            центр
+          </span>
+
+        </a>
         <button type="button" class="header-btn header__menu">Меню</button>
-        <a href="" class="header-btn header__item">Забронировать</a>
-        <a href="" class="header-btn header__item">Контакты</a>
+        <a href="room-booking.html" class="header-btn header__item">Забронировать</a>
+        <a href="contacts.html" class="header-btn header__item">Контакты</a>
+        <button class="menu__close-btn">Закрыть[Х]</button>
         <ul class="menu__list">
           <li class="menu__item">
             <a href="/abouthotel.html" class="menu__link">
@@ -24,26 +33,26 @@
             </a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">
+            <a href="/hotel-rooms.html" class="menu__link">
               <div class="menu__item-sprite sprite-bed"></div>
               <!--<img src="" alt="" class="menu__item-logo"> -->
               <span class="menu__item-name">Номера</span>
             </a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">
+            <a href="/bar-restaurant.html" class="menu__link">
               <div class="menu__item-sprite sprite-coffee"></div>
               <span class="menu__item-name">Питание</span>
             </a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">
+            <a href="/hotel-sport.html" class="menu__link">
               <div class="menu__item-sprite sprite-map"></div>
               <span class="menu__item-name">Отдых</span>
             </a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">
+            <a href="/hotel-events.html" class="menu__link">
               <div class="menu__item-sprite sprite-party"></div>
               <span class="menu__item-name">Мероприятия</span>
             </a>
@@ -60,24 +69,11 @@
 
     <div class="second-navigation red-bg">
        <div class="second-navigation__wrap">
-         <span class="second-navigation__title">Номера:</span>
-          <ul class="second-navigation__list">
-            <li class="second-navigation__item">
-              <a href="" class="second-navigation__link">Забронировать сейчас</a>
-            </li>
-          </ul>
+         <span class="second-navigation__title">Онлайн бронирование</span>
+
        </div>
     </div>
 
-    <div class="content">
-       <div class="content-intro room-bg-1">
-          <div class="content-intro__text">
-             <p>
-               Краткое описание номера
-             </p>
-          </div>
-       </div>
-    </div>
 
     <div class="content__block about-room">
 
@@ -89,41 +85,710 @@
       <h2 class="content__title">Бронирование</h2>
 
       <form action="" class="booking-form">
-        <div class="booking-form__date-choice">
-          <label>
-            Дата заезда:
-            <input type="date" required>
-          </label>
-          <label>
-            Дата выезда:
-            <input type="date" required>
-          </label>
-          <label>
-            Ночей:
-            <input type="number">
-          </label>
+        <div class="booking-form__conditions">
+          <div class="booking-form__date-choice">
+            <label>
+              Дата заезда:
+              <input type="date">
+            </label>
+            <label>
+              Дата выезда:
+              <input type="date">
+            </label>
+            <label>
+              Ночей:
+              <input type="number">
+            </label>
+          </div>
+          <div class="booking-form__people-count-choise">
+            <label>
+              Номеров:
+              <input type="number">
+            </label>
+            <label>
+              Взрослые:
+              <input type="number">
+            </label>
+            <label>
+              Дети(0-3):
+              <input type="number">
+            </label>
+            <label>
+              Дети(3-14):
+              <input type="number">
+            </label>
+          </div>
         </div>
-        <div class="booking-form__people-count-choise">
-          <label>
-            Номеров:
-            <input type="number">
-          </label>
-          <label>
-            Взрослые:
-            <input type="number">
-          </label>
-          <label>
-            Дети(0-3):
-            <input type="number">
-          </label>
-          <label>
-            Дети(3-14):
-            <input type="number">
-          </label>
+
+        <div class="booking-form__calendar-block">
+          <div class="booking-form__calendar">
+
+            <table class="booking-form__calendar--1  booking-form__calendar--show">
+<tbody><tr><td class="center_text" colspan="7"></td></tr>
+<tr>
+<td colspan="7" class="old-datepicker old-datepicker_head">
+<table align="center" class="old-datepicker__table">
+<tbody><tr>
+<td width="20%" align="left" class="prev-arrow">
+
+</td>
+
+<td align="center" width="60%" id="Td0" class="old-datepicker__month">Май 2017</td>
+<td width="20%">&nbsp;</td>
+</tr>
+</tbody></table>
+</td>
+<td>&nbsp;</td>
+<td colspan="7" class="old-datepicker old-datepicker_head">
+<table align="center" class="old-datepicker__table">
+<tbody><tr>
+<td width="20%">&nbsp;</td>
+<td align="center" width="60%" id="Td1" class="old-datepicker__month">Июнь 2017</td>
+<td width="20%" align="right" class="next-arrow">
+<input type="image" name="AvlCalendar1$AvlCalendarRight" id="AvlCalendar1_AvlCalendarRight" class="old-datepicker__next changeMonth " src="img/arrow.png" alt=">" onclick="monthReLoaded();" />
+</td>
+</tr>
+</tbody></table>
+</td>
+
+</tr>
+<tr>
+
+    <th class="old-datepicker__head">Пн</th>
+
+    <th class="old-datepicker__head">Вт</th>
+
+    <th class="old-datepicker__head">Ср</th>
+
+    <th class="old-datepicker__head">Чт</th>
+
+    <th class="old-datepicker__head">Пт</th>
+
+    <th class="old-datepicker__head">Сб</th>
+
+  <th class="old-datepicker__head">Вс</th>
+<th width="10"> </th>
+
+    <th class="old-datepicker__head">Пн</th>
+
+    <th class="old-datepicker__head">Вт</th>
+
+    <th class="old-datepicker__head">Ср</th>
+
+    <th class="old-datepicker__head">Чт</th>
+
+    <th class="old-datepicker__head">Пт</th>
+
+    <th class="old-datepicker__head">Сб</th>
+
+  <th class="old-datepicker__head">Вс</th>
+</tr>
+
+
+<tr><td onclick="setDates(this.id);" id="a1" class="cal_invalid" style="border: medium none ; background-color:#f8f7f6;">1</td>
+<td onclick="setDates(this.id);" id="a2" class="cal_invalid" style="border: medium none ; background-color:#f8f7f6;">2</td>
+<td onclick="setDates(this.id);" id="a3" class="cal_invalid" style="border: medium none ; background-color:#f8f7f6;">3</td>
+<td onclick="setDates(this.id);" id="a4" class="cal_invalid" style="border: medium none ; background-color:#f8f7f6;">4</td>
+<td onclick="setDates(this.id);" id="a5" class="cal_invalid" style="border: medium none ; background-color:#f8f7f6;">5</td>
+<td onclick="setDates(this.id);" id="a6" class="cal_invalid" style="border: medium none ; background-color:#f8f7f6;">6</td>
+<td onclick="setDates(this.id);" id="a7" class="cal_open" style="border: medium none ;background-color:#f8f7f6; color:#000000">7</td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b1" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b2" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b3" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b4" class="cal_open" style="border: medium none ;background-color:#f8f7f6; color:#000000">1</td>
+<td onclick="setDates(this.id);" id="b5" class="cal_open" style="border: medium none ;background-color:#f8f7f6; color:#000000">2</td>
+<td onclick="setDates(this.id);" id="b6" class="cal_open" style="border: medium none ;background-color:#f8f7f6; color:#000000">3</td>
+<td onclick="setDates(this.id);" id="b7" class="cal_closed" style="border: medium none ;background-color:#f8f7f6; color:#000000">4</td>
+</tr><tr><td onclick="setDates(this.id);" id="a8" class="cal_open" style="border: medium none ;background-color:#f8f7f6; color:#000000">8</td>
+<td onclick="setDates(this.id);" id="a9" class="cal_open" style="border: medium none ;background-color:#f8f7f6; color:#000000">9</td>
+<td onclick="setDates(this.id);" id="a10" class="cal_open" style="border: medium none ;background-color:#f8f7f6; color:#000000">10</td>
+<td onclick="setDates(this.id);" id="a11" class="cal_open" style="border: medium none ;background-color:#f8f7f6; color:#000000">11</td>
+<td onclick="setDates(this.id);" id="a12" class="cal_open" style="border: medium none ;background-color:#f8f7f6; color:#000000">12</td>
+<td onclick="setDates(this.id);" id="a13" class="cal_open" style="border: medium none ;background-color:#f8f7f6; color:#000000">13</td>
+<td onclick="setDates(this.id);" id="a14" class="cal_open" style="border: medium none ;background-color:#f8f7f6; color:#000000">14</td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b8" class="cal_closed" style="border: medium none ;background-color:#f8f7f6;; color:#000000">5</td>
+<td onclick="setDates(this.id);" id="b9" class="cal_closed" style="border: medium none ;background-color:#f8f7f6; color:#000000">6</td>
+<td onclick="setDates(this.id);" id="b10" class="cal_closed" style="border: medium none ;background-color:#f8f7f6; color:#000000">7</td>
+<td onclick="setDates(this.id);" id="b11" class="cal_open" style="border: medium none ;background-color:#f8f7f6; color:#000000">8</td>
+<td onclick="setDates(this.id);" id="b12" class="cal_open" style="border: medium none ;background-color:#f8f7f6; color:#000000">9</td>
+<td onclick="setDates(this.id);" id="b13" class="cal_closed" style="border: medium none ;background-color:#f8f7f6; color:#000000">10</td>
+<td onclick="setDates(this.id);" id="b14" class="cal_closed" style="border: medium none ;background-color:#f8f7f6; color:#000000">11</td>
+</tr><tr><td onclick="setDates(this.id);" id="a15" class="cal_closed" style="border: medium none ;background-color:#f8f7f6; color:#000000">15</td>
+<td onclick="setDates(this.id);" id="a16" class="cal_closed" style="border: medium none ;background-color:#f8f7f6; color:#000000">16</td>
+<td onclick="setDates(this.id);" id="a17" class="cal_open" style="border: medium none ;background-color:#f8f7f6; color:#000000">17</td>
+<td onclick="setDates(this.id);" id="a18" class="cal_open" style="border: medium none ;background-color:#f8f7f6; color:#000000">18</td>
+<td onclick="setDates(this.id);" id="a19" class="cal_open" style="border: medium none ;background-color:#f8f7f6; color:#000000">19</td>
+<td onclick="setDates(this.id);" id="a20" class="cal_open" style="border: medium none ;background-color:#f8f7f6; color:#000000">20</td>
+<td onclick="setDates(this.id);" id="a21" class="cal_open" style="border: medium none ;background-color:#f8f7f6; color:#000000">21</td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b15" class="cal_closed" style="border: medium none ;background-color:#f8f7f6; color:#000000">12</td>
+<td onclick="setDates(this.id);" id="b16" class="cal_closed" style="border: medium none ;background-color:#f8f7f6; color:#000000">13</td>
+<td onclick="setDates(this.id);" id="b17" class="cal_closed" style="border: medium none ;background-color:#f8f7f6; color:#000000">14</td>
+<td onclick="setDates(this.id);" id="b18" class="cal_closed" style="border: medium none ;background-color:#f8f7f6; color:#000000">15</td>
+<td onclick="setDates(this.id);" id="b19" class="cal_closed" style="border: medium none ;background-color:#f67047; color:#000000">16</td>
+<td onclick="setDates(this.id);" id="b20" class="cal_closed" style="border: medium none ;background-color:#f67047; color:#000000">17</td>
+<td onclick="setDates(this.id);" id="b21" class="cal_closed" style="border: medium none ;background-color:#89c587; color:#000000">18</td>
+</tr><tr><td onclick="setDates(this.id);" id="a22" class="cal_open" style="border: medium none ;background-color:#89c587; color:#000000">22</td>
+<td onclick="setDates(this.id);" id="a23" class="cal_open" style="border: medium none ;background-color:#89c587; color:#000000">23</td>
+<td onclick="setDates(this.id);" id="a24" class="cal_closed" style="border: medium none ;background-color:#89c587; color:#000000">24</td>
+<td onclick="setDates(this.id);" id="a25" class="cal_closed" style="border: medium none ;background-color:#89c587; color:#000000">25</td>
+<td onclick="setDates(this.id);" id="a26" class="cal_closed" style="border: medium none ;background-color:#89c587; color:#000000">26</td>
+<td onclick="setDates(this.id);" id="a27" class="cal_open" style="border: medium none ;background-color:#89c587; color:#000000">27</td>
+<td onclick="setDates(this.id);" id="a28" class="cal_open" style="border: medium none ;background-color:#89c587; color:#000000">28</td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b22" class="cal_closed" style="border: medium none ;background-color:#89c587; color:#000000">19</td>
+<td onclick="setDates(this.id);" id="b23" class="cal_closed" style="border: medium none ;background-color:#89c587; color:#000000">20</td>
+<td onclick="setDates(this.id);" id="b24" class="cal_closed" style="border: medium none ;background-color:#89c587; color:#000000">21</td>
+<td onclick="setDates(this.id);" id="b25" class="cal_closed" style="border: medium none ;background-color:#89c587; color:#000000">22</td>
+<td onclick="setDates(this.id);" id="b26" class="cal_closed" style="border: medium none ;background-color:#89c587; color:#000000">23</td>
+<td onclick="setDates(this.id);" id="b27" class="cal_closed" style="border: medium none ;background-color:#89c587; color:#000000">24</td>
+<td onclick="setDates(this.id);" id="b28" class="cal_closed" style="border: medium none ;background-color:#89c587; color:#000000">25</td>
+</tr><tr><td onclick="setDates(this.id);" id="a29" class="cal_open" style="border: medium none ;background-color:#FFFF00; color:#000000">29</td>
+<td onclick="setDates(this.id);" id="a30" class="cal_open" style="border: medium none ;background-color:#FF8080; color:#000000">30</td>
+<td onclick="setDates(this.id);" id="a31" class="cal_open" style="border: medium none ;background-color:#FFFF00; color:#000000">31</td>
+<td onclick="setDates(this.id);" id="a32" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a33" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a34" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a35" class="cal_invalid" style="border: medium none ;"> </td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b29" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">26</td>
+<td onclick="setDates(this.id);" id="b30" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">27</td>
+<td onclick="setDates(this.id);" id="b31" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">28</td>
+<td onclick="setDates(this.id);" id="b32" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">29</td>
+<td onclick="setDates(this.id);" id="b33" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">30</td>
+<td onclick="setDates(this.id);" id="b34" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b35" class="cal_invalid" style="border: medium none ;"> </td>
+</tr><tr><td onclick="setDates(this.id);" id="a36" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a37" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a38" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a39" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a40" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a41" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a42" class="cal_invalid" style="border: medium none ;"> </td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b36" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b37" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b38" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b39" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b40" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b41" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b42" class="cal_invalid" style="border: medium none ;"> </td>
+</tr>
+
+</tbody></table>
+
+
+
+
+
+
+
+
+
+<table class="booking-form__calendar--2">
+<tbody><tr><td class="center_text" colspan="7"></td></tr>
+<tr>
+<td colspan="7" class="old-datepicker old-datepicker_head">
+<table align="center" class="prev-arrow">
+<tbody><tr>
+<td width="20%" align="left" class="old-datepicker__arrow">
+<input type="image" name="AvlCalendar1$AvlCalendarLeft" id="AvlCalendar1_AvlCalendarLeft" class="changeMonth old-datepicker__prev" src="img/arrow.png" alt="<">
+</td>
+
+<td align="center" width="60%" id="Td0" class="old-datepicker__month">Июль 2017</td>
+<td width="20%">&nbsp;</td>
+</tr>
+</tbody></table>
+</td>
+<td>&nbsp;</td>
+<td colspan="7" class="old-datepicker old-datepicker_head">
+<table align="center" class="next-arrow">
+<tbody><tr>
+<td width="20%">&nbsp;</td>
+<td align="center" width="60%" id="Td1" class="old-datepicker__month">Август 2017</td>
+<td width="20%" align="right" class="old-datepicker__arrow">
+<input type="image" name="AvlCalendar1$AvlCalendarRight" id="AvlCalendar1_AvlCalendarRight" class="old-datepicker__next changeMonth " src="img/arrow.png" alt=">" onclick="monthReLoaded();">
+</td>
+</tr>
+</tbody></table>
+</td>
+
+</tr>
+<tr>
+
+    <th class="old-datepicker__head">Пн</th>
+
+    <th class="old-datepicker__head">Вт</th>
+
+    <th class="old-datepicker__head">Ср</th>
+
+    <th class="old-datepicker__head">Чт</th>
+
+    <th class="old-datepicker__head">Пт</th>
+
+    <th class="old-datepicker__head">Сб</th>
+
+  <th class="old-datepicker__head">Вс</th>
+<th width="10"> </th>
+
+    <th class="old-datepicker__head">Пн</th>
+
+    <th class="old-datepicker__head">Вт</th>
+
+    <th class="old-datepicker__head">Ср</th>
+
+    <th class="old-datepicker__head">Чт</th>
+
+    <th class="old-datepicker__head">Пт</th>
+
+    <th class="old-datepicker__head">Сб</th>
+
+  <th class="old-datepicker__head">Вс</th>
+</tr>
+
+
+<tr><td onclick="setDates(this.id);" id="a1" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a2" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a3" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a4" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a5" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a6" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">1</td>
+<td onclick="setDates(this.id);" id="a7" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">2</td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b1" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b2" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">1</td>
+<td onclick="setDates(this.id);" id="b3" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">2</td>
+<td onclick="setDates(this.id);" id="b4" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">3</td>
+<td onclick="setDates(this.id);" id="b5" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">4</td>
+<td onclick="setDates(this.id);" id="b6" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">5</td>
+<td onclick="setDates(this.id);" id="b7" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">6</td>
+</tr><tr><td onclick="setDates(this.id);" id="a8" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">3</td>
+<td onclick="setDates(this.id);" id="a9" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">4</td>
+<td onclick="setDates(this.id);" id="a10" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">5</td>
+<td onclick="setDates(this.id);" id="a11" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">6</td>
+<td onclick="setDates(this.id);" id="a12" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">7</td>
+<td onclick="setDates(this.id);" id="a13" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">8</td>
+<td onclick="setDates(this.id);" id="a14" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">9</td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b8" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">7</td>
+<td onclick="setDates(this.id);" id="b9" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">8</td>
+<td onclick="setDates(this.id);" id="b10" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">9</td>
+<td onclick="setDates(this.id);" id="b11" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">10</td>
+<td onclick="setDates(this.id);" id="b12" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">11</td>
+<td onclick="setDates(this.id);" id="b13" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">12</td>
+<td onclick="setDates(this.id);" id="b14" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">13</td>
+</tr><tr><td onclick="setDates(this.id);" id="a15" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">10</td>
+<td onclick="setDates(this.id);" id="a16" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">11</td>
+<td onclick="setDates(this.id);" id="a17" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">12</td>
+<td onclick="setDates(this.id);" id="a18" class="cal_open" style="border: medium none ;background-color:#FF8080; color:#000000">13</td>
+<td onclick="setDates(this.id);" id="a19" class="cal_open" style="border: medium none ;background-color:#FF8080; color:#000000">14</td>
+<td onclick="setDates(this.id);" id="a20" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">15</td>
+<td onclick="setDates(this.id);" id="a21" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">16</td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b15" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">14</td>
+<td onclick="setDates(this.id);" id="b16" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">15</td>
+<td onclick="setDates(this.id);" id="b17" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">16</td>
+<td onclick="setDates(this.id);" id="b18" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">17</td>
+<td onclick="setDates(this.id);" id="b19" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">18</td>
+<td onclick="setDates(this.id);" id="b20" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">19</td>
+<td onclick="setDates(this.id);" id="b21" class="cal_open" style="border: medium none ;background-color:#FF8080; color:#000000">20</td>
+</tr><tr><td onclick="setDates(this.id);" id="a22" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">17</td>
+<td onclick="setDates(this.id);" id="a23" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">18</td>
+<td onclick="setDates(this.id);" id="a24" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">19</td>
+<td onclick="setDates(this.id);" id="a25" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">20</td>
+<td onclick="setDates(this.id);" id="a26" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">21</td>
+<td onclick="setDates(this.id);" id="a27" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">22</td>
+<td onclick="setDates(this.id);" id="a28" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">23</td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b22" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">21</td>
+<td onclick="setDates(this.id);" id="b23" class="cal_open" style="border: medium none ;background-color:#FF8080; color:#000000">22</td>
+<td onclick="setDates(this.id);" id="b24" class="cal_open" style="border: medium none ;background-color:#FF8080; color:#000000">23</td>
+<td onclick="setDates(this.id);" id="b25" class="cal_open" style="border: medium none ;background-color:#FFFF00; color:#000000">24</td>
+<td onclick="setDates(this.id);" id="b26" class="cal_open" style="border: medium none ;background-color:#FFFF00; color:#000000">25</td>
+<td onclick="setDates(this.id);" id="b27" class="cal_open" style="border: medium none ;background-color:#FFFF00; color:#000000">26</td>
+<td onclick="setDates(this.id);" id="b28" class="cal_open" style="border: medium none ;background-color:#FF8080; color:#000000">27</td>
+</tr><tr><td onclick="setDates(this.id);" id="a29" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">24</td>
+<td onclick="setDates(this.id);" id="a30" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">25</td>
+<td onclick="setDates(this.id);" id="a31" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">26</td>
+<td onclick="setDates(this.id);" id="a32" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">27</td>
+<td onclick="setDates(this.id);" id="a33" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">28</td>
+<td onclick="setDates(this.id);" id="a34" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">29</td>
+<td onclick="setDates(this.id);" id="a35" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">30</td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b29" class="cal_open" style="border: medium none ;background-color:#FFFF00; color:#000000">28</td>
+<td onclick="setDates(this.id);" id="b30" class="cal_open" style="border: medium none ;background-color:#FFFF00; color:#000000">29</td>
+<td onclick="setDates(this.id);" id="b31" class="cal_open" style="border: medium none ;background-color:#FFFF00; color:#000000">30</td>
+<td onclick="setDates(this.id);" id="b32" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">31</td>
+<td onclick="setDates(this.id);" id="b33" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b34" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b35" class="cal_invalid" style="border: medium none ;"> </td>
+</tr><tr><td onclick="setDates(this.id);" id="a36" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">31</td>
+<td onclick="setDates(this.id);" id="a37" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a38" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a39" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a40" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a41" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a42" class="cal_invalid" style="border: medium none ;"> </td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b36" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b37" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b38" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b39" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b40" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b41" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b42" class="cal_invalid" style="border: medium none ;"> </td>
+</tr>
+
+</tbody></table>
+
+
+
+
+
+
+<table class="booking-form__calendar--3">
+<tbody><tr><td class="center_text" colspan="7"></td></tr>
+<tr>
+<td colspan="7" class="old-datepicker old-datepicker_head">
+<table align="center" class="prev-arrow">
+<tbody><tr>
+<td width="20%" align="left" class="old-datepicker__arrow">
+<input type="image" name="AvlCalendar1$AvlCalendarLeft" id="AvlCalendar1_AvlCalendarLeft" class="changeMonth old-datepicker__prev" src="img/arrow.png" alt="<">
+</td>
+
+<td align="center" width="60%" id="Td0" class="old-datepicker__month">Сентябрь 2017</td>
+<td width="20%">&nbsp;</td>
+</tr>
+</tbody></table>
+</td>
+<td>&nbsp;</td>
+<td colspan="7" class="old-datepicker old-datepicker_head">
+<table align="center" class="next-arrow">
+<tbody><tr>
+<td width="20%">&nbsp;</td>
+<td align="center" width="60%" id="Td1" class="old-datepicker__month">Октябрь 2017</td>
+<td width="20%" align="right" class="old-datepicker__arrow">
+<input type="image" name="AvlCalendar1$AvlCalendarRight" id="AvlCalendar1_AvlCalendarRight" class="old-datepicker__next changeMonth " src="img/arrow.png" alt=">" onclick="monthReLoaded();">
+</td>
+</tr>
+</tbody></table>
+</td>
+
+</tr>
+<tr>
+
+    <th class="old-datepicker__head">Пн</th>
+
+    <th class="old-datepicker__head">Вт</th>
+
+    <th class="old-datepicker__head">Ср</th>
+
+    <th class="old-datepicker__head">Чт</th>
+
+    <th class="old-datepicker__head">Пт</th>
+
+    <th class="old-datepicker__head">Сб</th>
+
+  <th class="old-datepicker__head">Вс</th>
+<th width="10"> </th>
+
+    <th class="old-datepicker__head">Пн</th>
+
+    <th class="old-datepicker__head">Вт</th>
+
+    <th class="old-datepicker__head">Ср</th>
+
+    <th class="old-datepicker__head">Чт</th>
+
+    <th class="old-datepicker__head">Пт</th>
+
+    <th class="old-datepicker__head">Сб</th>
+
+  <th class="old-datepicker__head">Вс</th>
+</tr>
+
+
+<tr><td onclick="setDates(this.id);" id="a1" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a2" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a3" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a4" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a5" class="cal_open" style="border: medium none ;background-color:#FF8080; color:#000000">1</td>
+<td onclick="setDates(this.id);" id="a6" class="cal_open" style="border: medium none ;background-color:#FF8080; color:#000000">2</td>
+<td onclick="setDates(this.id);" id="a7" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">3</td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b1" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b2" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b3" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b4" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b5" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b6" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b7" class="cal_open" style="border: medium none ;background-color:#FF8080; color:#000000">1</td>
+</tr><tr><td onclick="setDates(this.id);" id="a8" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">4</td>
+<td onclick="setDates(this.id);" id="a9" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">5</td>
+<td onclick="setDates(this.id);" id="a10" class="cal_open" style="border: medium none ;background-color:#FF8080; color:#000000">6</td>
+<td onclick="setDates(this.id);" id="a11" class="cal_open" style="border: medium none ;background-color:#FF8080; color:#000000">7</td>
+<td onclick="setDates(this.id);" id="a12" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">8</td>
+<td onclick="setDates(this.id);" id="a13" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">9</td>
+<td onclick="setDates(this.id);" id="a14" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">10</td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b8" class="cal_open" style="border: medium none ;background-color:#FF8080; color:#000000">2</td>
+<td onclick="setDates(this.id);" id="b9" class="cal_open" style="border: medium none ;background-color:#FFFF00; color:#000000">3</td>
+<td onclick="setDates(this.id);" id="b10" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">4</td>
+<td onclick="setDates(this.id);" id="b11" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">5</td>
+<td onclick="setDates(this.id);" id="b12" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">6</td>
+<td onclick="setDates(this.id);" id="b13" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">7</td>
+<td onclick="setDates(this.id);" id="b14" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">8</td>
+</tr><tr><td onclick="setDates(this.id);" id="a15" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">11</td>
+<td onclick="setDates(this.id);" id="a16" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">12</td>
+<td onclick="setDates(this.id);" id="a17" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">13</td>
+<td onclick="setDates(this.id);" id="a18" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">14</td>
+<td onclick="setDates(this.id);" id="a19" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">15</td>
+<td onclick="setDates(this.id);" id="a20" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">16</td>
+<td onclick="setDates(this.id);" id="a21" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">17</td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b15" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">9</td>
+<td onclick="setDates(this.id);" id="b16" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">10</td>
+<td onclick="setDates(this.id);" id="b17" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">11</td>
+<td onclick="setDates(this.id);" id="b18" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">12</td>
+<td onclick="setDates(this.id);" id="b19" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">13</td>
+<td onclick="setDates(this.id);" id="b20" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">14</td>
+<td onclick="setDates(this.id);" id="b21" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">15</td>
+</tr><tr><td onclick="setDates(this.id);" id="a22" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">18</td>
+<td onclick="setDates(this.id);" id="a23" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">19</td>
+<td onclick="setDates(this.id);" id="a24" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">20</td>
+<td onclick="setDates(this.id);" id="a25" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">21</td>
+<td onclick="setDates(this.id);" id="a26" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">22</td>
+<td onclick="setDates(this.id);" id="a27" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">23</td>
+<td onclick="setDates(this.id);" id="a28" class="cal_open" style="border: medium none ;background-color:#FF8080; color:#000000">24</td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b22" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">16</td>
+<td onclick="setDates(this.id);" id="b23" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">17</td>
+<td onclick="setDates(this.id);" id="b24" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">18</td>
+<td onclick="setDates(this.id);" id="b25" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">19</td>
+<td onclick="setDates(this.id);" id="b26" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">20</td>
+<td onclick="setDates(this.id);" id="b27" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">21</td>
+<td onclick="setDates(this.id);" id="b28" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">22</td>
+</tr><tr><td onclick="setDates(this.id);" id="a29" class="cal_open" style="border: medium none ;background-color:#FF8080; color:#000000">25</td>
+<td onclick="setDates(this.id);" id="a30" class="cal_open" style="border: medium none ;background-color:#FF8080; color:#000000">26</td>
+<td onclick="setDates(this.id);" id="a31" class="cal_open" style="border: medium none ;background-color:#FF8080; color:#000000">27</td>
+<td onclick="setDates(this.id);" id="a32" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">28</td>
+<td onclick="setDates(this.id);" id="a33" class="cal_closed" style="border: medium none ;background-color:#FF0000; color:#000000">29</td>
+<td onclick="setDates(this.id);" id="a34" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">30</td>
+<td onclick="setDates(this.id);" id="a35" class="cal_invalid" style="border: medium none ;"> </td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b29" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">23</td>
+<td onclick="setDates(this.id);" id="b30" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">24</td>
+<td onclick="setDates(this.id);" id="b31" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">25</td>
+<td onclick="setDates(this.id);" id="b32" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">26</td>
+<td onclick="setDates(this.id);" id="b33" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">27</td>
+<td onclick="setDates(this.id);" id="b34" class="cal_open" style="border: medium none ;background-color:#C0C0C0; color:#000000">28</td>
+<td onclick="setDates(this.id);" id="b35" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">29</td>
+</tr><tr><td onclick="setDates(this.id);" id="a36" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a37" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a38" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a39" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a40" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a41" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a42" class="cal_invalid" style="border: medium none ;"> </td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b36" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">30</td>
+<td onclick="setDates(this.id);" id="b37" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">31</td>
+<td onclick="setDates(this.id);" id="b38" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b39" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b40" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b41" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b42" class="cal_invalid" style="border: medium none ;"> </td>
+</tr>
+
+</tbody></table>
+
+
+
+
+
+
+
+
+<table class="booking-form__calendar--4">
+<tbody><tr><td class="center_text" colspan="7"></td></tr>
+<tr>
+<td colspan="7" class="old-datepicker old-datepicker_head">
+<table align="center" class="old-datepicker__table">
+<tbody><tr>
+<td width="20%" align="left" class="prev-arrow">
+<input type="image" name="AvlCalendar1$AvlCalendarLeft" id="AvlCalendar1_AvlCalendarLeft" class="changeMonth old-datepicker__prev" src="img/arrow.png" alt="<">
+</td>
+
+<td align="center" width="60%" id="Td0" class="old-datepicker__month">Ноябрь 2017</td>
+<td width="20%">&nbsp;</td>
+</tr>
+</tbody></table>
+</td>
+<td>&nbsp;</td>
+<td colspan="7" class="old-datepicker old-datepicker_head">
+<table align="center" class="old-datepicker__table">
+<tbody><tr>
+<td width="20%">&nbsp;</td>
+<td align="center" width="60%" id="Td1" class="old-datepicker__month">Декабрь 2017</td>
+</tr>
+</tbody></table>
+</td>
+
+</tr>
+<tr>
+
+    <th class="old-datepicker__head">Пн</th>
+
+    <th class="old-datepicker__head">Вт</th>
+
+    <th class="old-datepicker__head">Ср</th>
+
+    <th class="old-datepicker__head">Чт</th>
+
+    <th class="old-datepicker__head">Пт</th>
+
+    <th class="old-datepicker__head">Сб</th>
+
+  <th class="old-datepicker__head">Вс</th>
+<th width="10"> </th>
+
+    <th class="old-datepicker__head">Пн</th>
+
+    <th class="old-datepicker__head">Вт</th>
+
+    <th class="old-datepicker__head">Ср</th>
+
+    <th class="old-datepicker__head">Чт</th>
+
+    <th class="old-datepicker__head">Пт</th>
+
+    <th class="old-datepicker__head">Сб</th>
+
+  <th class="old-datepicker__head">Вс</th>
+</tr>
+
+
+<tr><td onclick="setDates(this.id);" id="a1" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a2" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a3" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">1</td>
+<td onclick="setDates(this.id);" id="a4" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">2</td>
+<td onclick="setDates(this.id);" id="a5" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">3</td>
+<td onclick="setDates(this.id);" id="a6" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">4</td>
+<td onclick="setDates(this.id);" id="a7" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">5</td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b1" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b2" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b3" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b4" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b5" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">1</td>
+<td onclick="setDates(this.id);" id="b6" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">2</td>
+<td onclick="setDates(this.id);" id="b7" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">3</td>
+</tr><tr><td onclick="setDates(this.id);" id="a8" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">6</td>
+<td onclick="setDates(this.id);" id="a9" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">7</td>
+<td onclick="setDates(this.id);" id="a10" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">8</td>
+<td onclick="setDates(this.id);" id="a11" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">9</td>
+<td onclick="setDates(this.id);" id="a12" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">10</td>
+<td onclick="setDates(this.id);" id="a13" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">11</td>
+<td onclick="setDates(this.id);" id="a14" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">12</td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b8" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">4</td>
+<td onclick="setDates(this.id);" id="b9" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">5</td>
+<td onclick="setDates(this.id);" id="b10" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">6</td>
+<td onclick="setDates(this.id);" id="b11" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">7</td>
+<td onclick="setDates(this.id);" id="b12" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">8</td>
+<td onclick="setDates(this.id);" id="b13" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">9</td>
+<td onclick="setDates(this.id);" id="b14" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">10</td>
+</tr><tr><td onclick="setDates(this.id);" id="a15" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">13</td>
+<td onclick="setDates(this.id);" id="a16" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">14</td>
+<td onclick="setDates(this.id);" id="a17" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">15</td>
+<td onclick="setDates(this.id);" id="a18" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">16</td>
+<td onclick="setDates(this.id);" id="a19" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">17</td>
+<td onclick="setDates(this.id);" id="a20" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">18</td>
+<td onclick="setDates(this.id);" id="a21" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">19</td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b15" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">11</td>
+<td onclick="setDates(this.id);" id="b16" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">12</td>
+<td onclick="setDates(this.id);" id="b17" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">13</td>
+<td onclick="setDates(this.id);" id="b18" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">14</td>
+<td onclick="setDates(this.id);" id="b19" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">15</td>
+<td onclick="setDates(this.id);" id="b20" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">16</td>
+<td onclick="setDates(this.id);" id="b21" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">17</td>
+</tr><tr><td onclick="setDates(this.id);" id="a22" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">20</td>
+<td onclick="setDates(this.id);" id="a23" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">21</td>
+<td onclick="setDates(this.id);" id="a24" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">22</td>
+<td onclick="setDates(this.id);" id="a25" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">23</td>
+<td onclick="setDates(this.id);" id="a26" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">24</td>
+<td onclick="setDates(this.id);" id="a27" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">25</td>
+<td onclick="setDates(this.id);" id="a28" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">26</td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b22" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">18</td>
+<td onclick="setDates(this.id);" id="b23" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">19</td>
+<td onclick="setDates(this.id);" id="b24" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">20</td>
+<td onclick="setDates(this.id);" id="b25" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">21</td>
+<td onclick="setDates(this.id);" id="b26" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">22</td>
+<td onclick="setDates(this.id);" id="b27" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">23</td>
+<td onclick="setDates(this.id);" id="b28" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">24</td>
+</tr><tr><td onclick="setDates(this.id);" id="a29" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">27</td>
+<td onclick="setDates(this.id);" id="a30" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">28</td>
+<td onclick="setDates(this.id);" id="a31" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">29</td>
+<td onclick="setDates(this.id);" id="a32" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">30</td>
+<td onclick="setDates(this.id);" id="a33" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a34" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a35" class="cal_invalid" style="border: medium none ;"> </td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b29" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">25</td>
+<td onclick="setDates(this.id);" id="b30" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">26</td>
+<td onclick="setDates(this.id);" id="b31" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">27</td>
+<td onclick="setDates(this.id);" id="b32" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">28</td>
+<td onclick="setDates(this.id);" id="b33" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">29</td>
+<td onclick="setDates(this.id);" id="b34" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">30</td>
+<td onclick="setDates(this.id);" id="b35" class="cal_open" style="border: medium none ;background-color:#008000; color:#000000">31</td>
+</tr><tr><td onclick="setDates(this.id);" id="a36" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a37" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a38" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a39" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a40" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a41" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="a42" class="cal_invalid" style="border: medium none ;"> </td>
+<td>&nbsp;</td><td onclick="setDates(this.id);" id="b36" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b37" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b38" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b39" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b40" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b41" class="cal_invalid" style="border: medium none ;"> </td>
+<td onclick="setDates(this.id);" id="b42" class="cal_invalid" style="border: medium none ;"> </td>
+</tr>
+
+</tbody></table>
+
+
+          </div>
+          <div class="booking-form__calendar-descr">
+            <ul class="legends">
+         <li class="legends__item legends__item_available">
+             <div class="legends__color" style="background-color: #89c587">
+             </div>
+             <div class="legends__text">
+                 -Доступны свободные номера
+             </div>
+         </li>
+         <li class="legends__item legends__item_few">
+             <div class="legends__color" style="background-color: #f8f7f6">
+             </div>
+             <div class="legends__text">
+                 -Мало свободных номеров
+             </div>
+         </li>
+         <li class="legends__item legends__item_several">
+             <div class="legends__color" style="background-color: #FFFF00">
+             </div>
+             <div class="legends__text">
+                 -Осталось несколько свободных номеров
+             </div>
+         </li>
+         <li class="legends__item legends__item_several">
+             <div class="legends__color" style="background-color: #FF0000">
+             </div>
+             <div class="legends__text">
+                -Высокая загрузка. Уточняйте возможность бронирования
+                по телефону ‎‎8-800-234-35-04, а также по заявке, отправленной
+            		на почту reservations@mriyaresort.com
+             </div>
+         </li>
+
+     </ul>
+
+          </div>
         </div>
-        <div class="booking-form__choice-calendar-block"></div>
-        <div class="booking-form__submit-block"></div>
+
       </form>
+    </div>
+
+    <div class="booking-nav">
+      <div class="booking-nav__container ">
+        <a href="choice-room.html" class="booking-nav__btn ">
+          Далее
+        </a>
+      </div>
     </div>
 
     <a href="" class="up-btn">
@@ -141,13 +806,13 @@
               <a href="" class="link-politik">Политика конфидециальности</a>
               <a href="">Контакты</a>
             </div>
-            <a href="" class="link-booking">
+            <a href="room-booking.html" class="link-booking">
               <img src="/img/time-left.png" width="27" height="27" Alt="Забронировать">
               Забронировать</a>
         </section>
         <section class="footer__links-mobile">
           <a href="">Контакты</a>
-          <a href="booling-room.html">
+          <a href="room-booking.html">
 
             Забронировать
           </a>
@@ -164,5 +829,11 @@
         </section>
       </div>
     </footer>
+
+    <div class="overlay"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/calendar.js"></script>
+
   </body>
 </html>

@@ -20,7 +20,7 @@
     display: -ms-flex;
     display: flex;
     flex-direction: column;
-    margin-right: 34px;
+    margin-right: 35px;
 
     @media @tablet-width {
       margin-bottom: 22px;
@@ -39,7 +39,12 @@
     }
 
     & input[type="number"] {
+      padding: 10px 12px;
       width: 70px;
+    }
+    & input[type="date"] {
+
+      width: 138px;
     }
   }
 }
@@ -55,6 +60,20 @@
   @media @tablet-width {
     flex-direction: row;
     align-items: stretch;
+  }
+}
+.booking-form__people-count-choise {
+  position: relative;
+  left:-20px;
+
+  background: #fafafa;
+  padding: 21px 21px;
+
+  & label {
+    margin-right: 37px;
+  }
+  & label:last-child {
+    margin-right: 0px;
   }
 }
 
@@ -142,6 +161,37 @@
   }
 }
 
+input[type=date]::-webkit-calendar-picker-indicator {
+
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  background: url("../img/calendar.png") no-repeat;
+  height: 13px;
+
+  cursor: pointer;
+}
+input[type=date]::-webkit-calendar-picker-indicator::after {
+     content: url("../img/calendar.png");
+     display: block;
+     background:  no-repeat;
+     background-size: 10%;
+     width: 10px;
+     height: 10px;
+     position: relative;
+     transform: translateX(-2%);
+}
+input[type=date]::-webkit-calendar-picker-indicator:hover {
+  background: url("../img/calendar.png") no-repeat;
+}
+input[type=date]::-webkit-inner-spin-button { -webkit-appearance: none; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  background: white;
+}
 // .book-widget {
 //   display: -webkit-flex;
 //   display: -ms-flex;
@@ -274,4 +324,11 @@
   &::after {
     background: url("../img/arrow-white.png") no-repeat;
   }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
 }

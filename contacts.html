@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>hotels-главная</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
+
   </head>
   <body>
     <header class="not-main-header">
@@ -83,7 +83,7 @@
 
 
     <div class="content">
-       <div class="content-intro map-bg">
+      <div id="map" class="location__map">
        </div>
     </div>
 
@@ -193,5 +193,56 @@
     <div class="overlay"></div>
 
     <script src="js/main.js"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+    <script type="text/javascript">
+            ymaps.ready(init);
+            var myMap,
+                myPlacemark;
+
+                var isMobile = {
+                    Android: function() {
+                        return navigator.userAgent.match(/Android/i);
+                    },
+                    BlackBerry: function() {
+                        return navigator.userAgent.match(/BlackBerry/i);
+                    },
+                    iOS: function() {
+                        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+                    },
+                    Opera: function() {
+                        return navigator.userAgent.match(/Opera Mini/i);
+                    },
+                    Windows: function() {
+                        return navigator.userAgent.match(/IEMobile/i);
+                    },
+                    any: function() {
+                        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+                    }
+                };
+
+
+              function init(){
+                  myMap = new ymaps.Map("map", {
+                      center: [43.669886, 40.260844],
+                      zoom: 13,
+                      controls: []
+                  });
+
+               myPlacemark = new ymaps.Placemark([43.669886, 40.260844], { hintContent: 'Корпоративный центр', balloonContent: 'Корпоративный центр' });
+
+               myMap.geoObjects.add(myPlacemark);
+
+               if(isMobile.any()){
+                  myMap.behaviors.disable('drag');
+              }
+
+               myMap.behaviors.disable('scrollZoom');
+               myMap.controls.add('zoomControl')
+
+            }
+        </script>
+
    </body>
  </html>

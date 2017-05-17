@@ -2,9 +2,12 @@ header {
   @media @tablet-width {
     background-color: rgba(0, 0, 0, 0.6);
     margin-bottom: -100px;
+
+    z-index: 3;
   }
-  z-index: 3;
+
 }
+
 
 .not-main-header {
   background-color: #ffffff;
@@ -16,13 +19,21 @@ header {
 
   & .header-btn {
     color: #000000;
+    padding-left: 5px;
+    padding-right: 5px;
 
 
     @media @tablet-width {
       background-color: #ffffff;
       border: 1px solid #000000;
+      padding-left: 38px;
+      padding-right: 38px;
 
     }
+
+   & .header-btn:hover {
+     background-color: #cfab65;
+   }
 
   }
 
@@ -38,8 +49,8 @@ header {
   }
 
   & .header__logo-img {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
 
     @media @tablet-width {
       width: 48px;
@@ -56,6 +67,7 @@ header {
 
       font-size: 24px;
       line-height: 30px;
+      font-weight: 700;
       color: #b19151;
       text-transform: uppercase;
     }
@@ -65,6 +77,7 @@ header {
 
 .header {
   .container();
+  padding: 0 1%;
 
   padding-top: 8px;
   padding-bottom: 8px;
@@ -85,13 +98,13 @@ header {
   }
 }
 
-.header__menu {
+ .header__menu {
   @media (min-width: 980px) {
     display: none;
   }
 }
 
-.header__item {
+ .header__item {
   @media (min-width: 980px) {
     margin-right: 30px;
     order: 2;

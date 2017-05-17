@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>hotels-главная</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <script type='text/javascript' src='js/select.js'></script>
+
   </head>
   <body>
     <header class="not-main-header">
@@ -67,47 +66,13 @@
 
     <div class="second-navigation green-bg">
        <div class="second-navigation__wrap">
-         <!-- Вот эта штука и заменит нам select -->
-          <label class="selectGeneral" placeholder="select your OS..."> <!-- Да, да, placeholder тоже поддерживается -->
-             <!-- Если этот radio выбран - select открыт, если нет - select закрыт -->
-             <input type="radio" name="OS">
-
-             <!-- Это wrapper для вариантов выбора -->
-             <div>
-                 <!-- Группа radio и есть аналог оригинальных option -->
-                 <input
-                     type="radio"
-                     name="OS"
-                     value="linux"
-                     id="OS[linux]"
-                 >
-                 <!-- Аналог видимой части option -->
-                 <label for="OS[linux]">linux</label>
-
-                 <input
-                     type="radio"
-                     name="OS"
-                     value="windows"
-                     id="OS[windows]"
-                 >
-                 <label for="OS[windows]">windows</label>
-
-                 <input
-                     type="radio"
-                     name="OS"
-                     value="other"
-                     id="OS[other]"
-                 >
-                 <label for="OS[other]">other</label>
-             </div>
-          </label>
-
+          <a class="second-navigation__title-link" href="/abouthotel.html"><span class="second-navigation__title">Об отеле:</span></a>
           <ul class="second-navigation__list">
             <li class="second-navigation__item">
-              <a href="/abouthotel-how-to-find.html" class="second-navigation__link">Как добраться</a>
+              <a href="/abouthotel-how-to-find.html" class="second-navigation__link active-link">Как добраться</a>
             </li>
             <li class="second-navigation__item">
-              <a href="/abouthotel-documents.html" class="second-navigation__link">Документы</a>
+              <a href="/abouthotel-documents.html" class="second-navigation__link ">Документы</a>
             </li>
             <li class="second-navigation__item">
               <a href="/abouthotel-news.html" class="second-navigation__link">Новости</a>
@@ -118,7 +83,7 @@
 
 
     <div class="content">
-       <div class="content-intro map-bg">
+      <div id="map" class="location__map">
        </div>
     </div>
 
@@ -237,5 +202,57 @@
     <div class="overlay"></div>
 
     <script src="js/main.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+    <script type="text/javascript">
+            ymaps.ready(init);
+            var myMap,
+                myPlacemark;
+
+                var isMobile = {
+                    Android: function() {
+                        return navigator.userAgent.match(/Android/i);
+                    },
+                    BlackBerry: function() {
+                        return navigator.userAgent.match(/BlackBerry/i);
+                    },
+                    iOS: function() {
+                        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+                    },
+                    Opera: function() {
+                        return navigator.userAgent.match(/Opera Mini/i);
+                    },
+                    Windows: function() {
+                        return navigator.userAgent.match(/IEMobile/i);
+                    },
+                    any: function() {
+                        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+                    }
+                };
+
+
+              function init(){
+                  myMap = new ymaps.Map("map", {
+                      center: [43.669886, 40.260844],
+                      zoom: 13,
+                      controls: []
+                  });
+
+               myPlacemark = new ymaps.Placemark([43.669886, 40.260844], { hintContent: 'Корпоративный центр', balloonContent: 'Корпоративный центр' });
+
+               myMap.geoObjects.add(myPlacemark);
+
+               if(isMobile.any()){
+                  myMap.behaviors.disable('drag');
+              }
+
+               myMap.behaviors.disable('scrollZoom');
+               myMap.controls.add('zoomControl')
+
+            }
+        </script>
+
+
+
    </body>
  </html>

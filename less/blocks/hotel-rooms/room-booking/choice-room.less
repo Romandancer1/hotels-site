@@ -4,29 +4,42 @@
   padding-top: 28px;
   padding-bottom: 50px;
 }
-
+.choice-room__offer:nth-child(even) {
+  background-color: #f8f7f6;
+}
+.choice-room__offer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .choice-room__second-title {
-  margin-bottom: 4px;
 
   font-size: 18px;
-  line-height: 24px;
+
   text-transform: uppercase;
+  font-family: 'Champagne_Limousines_Bold_0';
 }
-
+.choice-room__more {
+  margin-bottom: 20px;
+}
 .choice-room__read-more {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 
-  color: #b6985d;
+  color: #000;
   font-size: 14px;
   line-height: 24px;
-  border-bottom: 1px dotted #b6985d;
+  border-bottom: 1px dashed #000;
 
   cursor: pointer;
 }
 
 .choice-room__third-title {
+  margin-bottom: 0;
+  margin-top: 0;
+
   font-size: 14px;
-  line-height: 24px;
+  line-height: 22px;
+
+  font-family: 'Champagne_Limousines_Bold_0';
 }
 
 .choice-room__price-range {
@@ -34,7 +47,7 @@
   display: -ms-flex;
   display: flex;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 
   font-size: 18px;
   line-height: 24px;
@@ -43,6 +56,7 @@
     font-weight: 700;
     font-size: 24px;
     color: #dab66f;
+    cursor: pointer;
 
     &:first-child {
       margin-right: 8px;
@@ -56,8 +70,8 @@
 
 .choice-room__room-item {
   position: relative;
+  margin-top: 20px;
 
-  margin-bottom: 25px;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -78,38 +92,73 @@
 
     background: url("../img/star.png") no-repeat;
   }
+
 }
 
 .choise-room__choice-btn {
-  padding: 7px 16px;
+  padding: 3px 16px;
   display: inline-block;
 
   font-size: 14px;
   line-height: 24px;
+  font-family: 'Champagne_Limousines_Bold_0';
 
   background-color: #cfab65;
-  border-radius: 12px;
+  border-radius: 19px;
 
   cursor: pointer;
+  color: #000;
 }
 
 .choice-room__item-wrap {
   margin-right: 30px;
   margin-bottom: 8px;
 
+  color: #000;
+
+  font-family: 'Champagne_Limousines_Bold_0';
+
   @media @desktop-width {
     margin-bottom: 0;
 
-    border-bottom: 1px dotted #000000;
+    border-bottom: 1px dashed #000000;
   }
 }
 
 .choice-room__room-name {
   margin-right: 50px;
 
-  border-bottom: 1px dotted #000000;
+
 
   @media @desktop-width {
     border-bottom: none;
   }
+}
+.choise-room__offer-descr p {
+   font-size: 17px;
+   line-height: 20px;
+}
+
+#about-order-1 {
+  margin-bottom: 35px;
+}
+
+.about-room-content {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 15px;
+  max-width: 780px;
+
+  transition: 2s;
+}
+.about-room-content p {
+  margin-left: 15px;
+}
+.room-link-active {
+  color: #dab66f;
+  border-bottom: 1px dashed #dab66f !important;
+
 }
